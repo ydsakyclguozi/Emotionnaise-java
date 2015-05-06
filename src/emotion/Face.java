@@ -8,7 +8,9 @@ package emotion;
 import java.util.logging.Logger;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfRect;
+import org.opencv.core.Size;
 import static org.opencv.imgcodecs.Imgcodecs.*;
+import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
 
 /**
@@ -59,7 +61,8 @@ public class Face {
             return;
         }
         this.face=new Mat(head,faceDetections.toArray()[0]);
-        
+        //All templates for images 150x150px
+        Imgproc.resize(this.face,this.face,new Size(150,150));
         
         //detectEyeRegions(this.face);
         EyeRegion eyeRegion=new EyeRegion(face);

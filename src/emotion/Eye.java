@@ -129,8 +129,7 @@ public final class Eye {
 
             //Adjust coordinates according to whole face
             outerCorner.y+=Eye.rightRect.y;
-            outerCorner.x+=EyeRegion.eyeRegionStartX;
-            outerCorner.x+=(EyeRegion.eyeRegionWidth/2);
+            outerCorner.x+=Eye.rightRect.x;
             outerCorner.x+=temp.width();     //We examine just right half on the right eye
             ////////////////////////////////////////////
             EyeRegion.rightOuterEyeCorner=outerCorner;
@@ -145,8 +144,8 @@ public final class Eye {
             
             Point outerCorner=new Point(maxVal.maxLoc.x+4,maxVal.maxLoc.y+9);
             //Adjust coordinates according to whole face
-            outerCorner.y+=EyeRegion.eyeRegionStartY;
-            outerCorner.x+=EyeRegion.eyeRegionStartX;
+            outerCorner.y+=Eye.leftRect.y;
+            outerCorner.x+=Eye.leftRect.x;
             ////////////////////////////////////////////
             EyeRegion.leftOuterEyeCorner=outerCorner;
         }
@@ -170,20 +169,21 @@ public final class Eye {
                 0,(int)(temp.width()*0.5),temp.height()));
         Mat result=new Mat(eyeRegion.width(),eyeRegion.height(),eyeRegion.type());
 
-        //(3,7)- coordinates of eye innerCorner in the template
+        //(4,7)- coordinates of eye innerCorner in the template
         if(rightEyeFlag)
         {
             imwrite("rightEyeForInnerTemplating.jpg",temp);
             Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF);
             Core.normalize(result,result,0,100,Core.NORM_MINMAX);
             Core.MinMaxLocResult maxVal=Core.minMaxLoc(result);
-            //(3,7)- coordinates of eye innerCorner in the template
-            Point innerCorner=new Point(maxVal.maxLoc.x+3,maxVal.maxLoc.y+7);
+            //(4,7)- coordinates of eye innerCorner in the template
+            Point innerCorner=new Point(maxVal.maxLoc.x+4,maxVal.maxLoc.y+7);
 
+            StaticFunctions.drawCross(temp, innerCorner, StaticFunctions.Features.EYE_CORNERS);
+            imwrite("rightEyeForInnerTemplating.jpg",temp);
             //Adjust coordinates according to whole face
-            innerCorner.y+=EyeRegion.eyeRegionStartY;
-            innerCorner.x+=EyeRegion.eyeRegionStartX;
-            innerCorner.x+=(EyeRegion.eyeRegionWidth/2);
+            innerCorner.y+=Eye.rightRect.y;
+            innerCorner.x+=Eye.rightRect.x;
              //We examine just right half on the right eye
             ////////////////////////////////////////////
             EyeRegion.rightInnerEyeCorner=innerCorner;
@@ -199,8 +199,8 @@ public final class Eye {
             Point innerCorner=new Point(maxVal.maxLoc.x+8,maxVal.maxLoc.y+7);
 
             //Adjust coordinates according to whole face
-            innerCorner.y+=EyeRegion.eyeRegionStartY;
-            innerCorner.x+=EyeRegion.eyeRegionStartX;
+            innerCorner.y+=Eye.leftRect.y;
+            innerCorner.x+=Eye.leftRect.x;
             innerCorner.x+=temp.width();    
             ////////////////////////////////////////////
             EyeRegion.leftInnerEyeCorner=innerCorner;
