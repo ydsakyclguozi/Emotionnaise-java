@@ -76,7 +76,7 @@ public class Face {
         new Eyebrow(eyeRegion,false);
         eyes.examineEyeOpeness(true);
         eyes.examineEyeOpeness(false);
-//        EyeRegion.areEyebrowsWrinkles();
+        EyeRegion.areEyebrowsWrinkles();
         eyeRegion.showFaceFeatures();
         eyeRegion.printData();
         

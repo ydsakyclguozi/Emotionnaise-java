@@ -73,36 +73,36 @@ public final class Eye {
          templatingOuterCorner(Eye.rightEye,true);
          templatingInnerCorner(Eye.rightEye,true);
     }
-    public Eye(EyeRegion eyeRegion, boolean rightEyeFlag)
-    {
-        reg=eyeRegion;
-        leftEye=new Mat(eyeRegion.eyeRegion, new Rect(
-        0,
-        0,
-        eyeRegion.eyeRegion.width()/2,
-        eyeRegion.eyeRegion.height()));
-        imwrite("leftEye.png", leftEye);
-        
-        rightEye=new Mat(eyeRegion.eyeRegion, new Rect(
-        eyeRegion.eyeRegion.width()/2,
-        0,
-        eyeRegion.eyeRegion.width()/2,
-        eyeRegion.eyeRegion.height()));
-        imwrite("rightEye.png", rightEye);
-        
-
-        
-        //Read template RIGHT OUTER CORNER
-        templatingOuterCorner(
-                rightEyeFlag?rightEye:leftEye,rightEyeFlag);
-        templatingInnerCorner(
-                rightEyeFlag?rightEye:leftEye, rightEyeFlag);
-        
-//        examineEyeOpeness(true);
-//        examineEyeOpeness(false);
-        
-        EyeRegion.showLegend();
-    }
+//    public Eye(EyeRegion eyeRegion, boolean rightEyeFlag)
+//    {
+//        reg=eyeRegion;
+//        leftEye=new Mat(eyeRegion.eyeRegion, new Rect(
+//        0,
+//        0,
+//        eyeRegion.eyeRegion.width()/2,
+//        eyeRegion.eyeRegion.height()));
+//        imwrite("leftEye.png", leftEye);
+//        
+//        rightEye=new Mat(eyeRegion.eyeRegion, new Rect(
+//        eyeRegion.eyeRegion.width()/2,
+//        0,
+//        eyeRegion.eyeRegion.width()/2,
+//        eyeRegion.eyeRegion.height()));
+//        imwrite("rightEye.png", rightEye);
+//        
+//
+//        
+//        //Read template RIGHT OUTER CORNER
+//        templatingOuterCorner(
+//                rightEyeFlag?rightEye:leftEye,rightEyeFlag);
+//        templatingInnerCorner(
+//                rightEyeFlag?rightEye:leftEye, rightEyeFlag);
+//        
+////        examineEyeOpeness(true);
+////        examineEyeOpeness(false);
+//        
+//        EyeRegion.showLegend();
+//    }
     private void templatingOuterCorner(Mat eyeRegion,boolean rightEyeFlag)
     {
 //        Mat template=imread("E:\\Studia\\II YEAR\\Team Project\\"
@@ -121,7 +121,7 @@ public final class Eye {
         if(rightEyeFlag)
         {
             imwrite("rightEyeForOuterTemplating.jpg",temp);
-            Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF);
+            Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF_NORMED);
             Core.normalize(result,result,0,100,Core.NORM_MINMAX);
             Core.MinMaxLocResult maxVal=Core.minMaxLoc(result);
             //(9,9)- coordinates of eye outerCorner in the template
@@ -138,7 +138,7 @@ public final class Eye {
         {
             imwrite("leftEyeForOuterTemplating.jpg",temp);
             Core.flip(template, template, 1);
-            Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF);
+            Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF_NORMED);
             Core.normalize(result,result,0,100,Core.NORM_MINMAX);
             Core.MinMaxLocResult maxVal=Core.minMaxLoc(result);
             
@@ -172,8 +172,9 @@ public final class Eye {
         //(4,7)- coordinates of eye innerCorner in the template
         if(rightEyeFlag)
         {
+            imwrite("template4righteye.jpg",template);
             imwrite("rightEyeForInnerTemplating.jpg",temp);
-            Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF);
+            Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF_NORMED);
             Core.normalize(result,result,0,100,Core.NORM_MINMAX);
             Core.MinMaxLocResult maxVal=Core.minMaxLoc(result);
             //(4,7)- coordinates of eye innerCorner in the template
@@ -184,7 +185,7 @@ public final class Eye {
             //Adjust coordinates according to whole face
             innerCorner.y+=Eye.rightRect.y;
             innerCorner.x+=Eye.rightRect.x;
-             //We examine just right half on the right eye
+             //We examine just left half on the right eye
             ////////////////////////////////////////////
             EyeRegion.rightInnerEyeCorner=innerCorner;
         }
@@ -192,7 +193,7 @@ public final class Eye {
         {
             imwrite("leftEyeForInnerTemplating.jpg",temp);
             Core.flip(template, template, 1);
-            Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF);
+            Imgproc.matchTemplate(temp, template, result, Imgproc.TM_CCOEFF_NORMED);
             Core.normalize(result,result,0,100,Core.NORM_MINMAX);
             Core.MinMaxLocResult maxVal=Core.minMaxLoc(result);
             
@@ -201,6 +202,7 @@ public final class Eye {
             //Adjust coordinates according to whole face
             innerCorner.y+=Eye.leftRect.y;
             innerCorner.x+=Eye.leftRect.x;
+            //We examine just right half on the left eye
             innerCorner.x+=temp.width();    
             ////////////////////////////////////////////
             EyeRegion.leftInnerEyeCorner=innerCorner;
@@ -281,8 +283,8 @@ public final class Eye {
     }
     private Rect recalculate(Rect _input,Mat canvas){
         Rect output=new Rect();
-        int width=(int) (_input.width*1.2);
-        int height=(int) (_input.height*1.2);
+        int width=(int) (_input.width*1.5);
+        int height=(int) (_input.height*1.5);
         output.x=_input.x-(width-_input.width)/2;
         output.y=_input.y-(height)/4;
         if(output.x<0){

@@ -5,6 +5,7 @@
  */
 package emotion;
 
+import static java.lang.Math.abs;
 import java.util.Vector;
 import java.util.logging.Logger;
 import org.opencv.core.Core;
@@ -28,18 +29,18 @@ import static org.opencv.imgproc.Imgproc.threshold;
 public class EyeRegion {
 
     //Eye region parameters
-    static int eyeRegionStartY;
-    static int eyeRegionStartX;
-    static int eyeRegionWidth;
-    static int eyeRegionHeight;
+//    static int eyeRegionStartY;
+//    static int eyeRegionStartX;
+//    static int eyeRegionWidth;
+//    static int eyeRegionHeight;
 
     static long wrinklesThreshold;
     static long wrinklesFactor;
     
-    final Mat eyeRegion;
+//    final Mat eyeRegion;
     static boolean unavailable=false;
-    Mat rightEye;
-    Mat leftEye;
+//    Eye rightEye;
+//    Eye leftEye;
 
     static Mat _face;
     //Points coordinates relatively to face image
@@ -72,166 +73,169 @@ public class EyeRegion {
         rightInnerEyebrowsCorner = new Point();
         leftOuterEyebrowsCorner = new Point();
         leftInnerEyebrowsCorner = new Point();
-
-        face.convertTo(face, 0, 0.7, 0);
-
-        //imwrite("blurred.png",face);
-        //Create empty image of same size as input face
-        Mat image = new Mat(new Size(face.width(), face.height()),
-                face.type(), new Scalar(0, 0, 0));
-
-        //Subtracting BLUE channel from RED channel
-        Vector<Mat> channels = new Vector<>();
-        split(face, channels);
-        for (int i = 0; i < face.width(); ++i) {
-            for (int j = 0; j < face.height(); ++j) {
-                int value;
-                value = (int) (channels.get(2).get(i, j)[0] - channels.get(1).get(i, j)[0]);
-                image.put(i, j, new double[]{value, value, value});
-            }
-        }
-        imwrite("RED-BLUEimage.png", image);
-
-        image.convertTo(image, 0, 5, 0);
-        //imwrite("contrasted.png",image);
-        threshold(image, image, 5, 255, Imgproc.THRESH_BINARY);
-
-        //Morphological closing
-        Mat mask = Imgproc.getStructuringElement(Imgproc.MORPH_CROSS, new Size(5, 5));
-        erode(image, image, mask);
-        dilate(image, image, mask);
-
-        //Clearing bottom half on an image (eyes are in top half
-        for (int i = image.height() / 2; i < image.height(); i++) {
-            for (int j = 0; j < face.width(); j++) {
-                image.put(i, j, new double[]{255, 255, 255});
-            }
-        }
-        imwrite("bottomCleaned.png", image);
-
-        //Mirror reflection
-        Mat flippedImage = new Mat();
-        Core.flip(image, flippedImage, 1);
-
-        //Bit xor operator- more visible eyes
-        Core.bitwise_xor(image, flippedImage, image);
-
-        //We are intrested just in places of changing intensity- gradient operator
-        int[] gradientMask = new int[9];
-        gradientMask[0] = -1;
-        gradientMask[1] = -5;
-        gradientMask[2] = -1;
-        gradientMask[3] = 0;
-        gradientMask[4] = 0;
-        gradientMask[5] = 0;
-        gradientMask[6] = 1;
-        gradientMask[7] = 5;
-        gradientMask[8] = 1;
-
-        image = StaticFunctions.convolution(gradientMask, image);
-
-        //Vertical projection to find proper extrema
-        long hist[] = new long[image.width()];
-        for (int i = 0; i < image.width(); i++) {
-            for (int j = 0; j < image.height(); j++) {
-                hist[i] += image.get(j, i)[0];
-            }
-
-        }
-
-        //Vertical projection
-        //We process just middle 3/5 of the face
-        boolean leftOut = false, leftInn = false,
-                rightInn = false, rightOut = false;
-        for (int i = (int) (image.width() * 0.2); i < (int) (image.width() * 0.8); i++) {
-            if (i < image.width() / 2) {
-                if (hist[i] > 0 && hist[i - 1] < hist[i] && leftOut == false) {
-                    EyeRegion.leftOuterEyeCorner.x = i;
-                    leftOut = true;
-                } else if (hist[i] > 0 && hist[i + 1] < hist[i] && leftInn == false) {
-                    EyeRegion.leftInnerEyeCorner.x = i + 10;
-                    leftInn = true;
-                }
-            } else {
-                if (hist[i] > 0 && hist[i - 1] == 0 && rightInn == false) {
-                    EyeRegion.rightInnerEyeCorner.x = i;
-                    rightInn = true;
-                } else if (hist[i] > 0 && hist[i + 1] == 0 && rightOut == false) {
-                    EyeRegion.rightOuterEyeCorner.x = i;
-                    rightOut = true;
-                }
-            }
-
-        }
-        /*
-         * We look for y coordinate determnining the highest sum
-         * of the intenisties of detected x points
-         */
-        int max = 0, y = 0;
-        for (int i = 0; i < image.height(); ++i) {
-            int temp = 0;
-            temp = (int) (image.get(i,
-                    (int) EyeRegion.leftOuterEyeCorner.x)[0]);
-            temp += (int) (image.get(i,
-                    (int) EyeRegion.leftInnerEyeCorner.x)[0]);
-            temp += (int) (image.get(i,
-                    (int) EyeRegion.rightInnerEyeCorner.x)[0]);
-            temp += (int) (image.get(i,
-                    (int) EyeRegion.rightOuterEyeCorner.x)[0]);
-            if (temp > max) {
-                max = temp;
-                y = i;
-            }
-        }
-        EyeRegion.leftOuterEyeCorner.y = y;
-        EyeRegion.leftInnerEyeCorner.y = y;
-        EyeRegion.rightInnerEyeCorner.y = y;
-        EyeRegion.rightOuterEyeCorner.y = y;
-
-       
-
-        //Face geometry factors
-        //Region of intrest- 2/5 of face height
-        float faceFactorWidth = image.width() / 8;
-        float faceFactorHeight = image.height() / 5;
-
-        int averageY = (int) (EyeRegion.rightInnerEyeCorner.y + EyeRegion.leftInnerEyeCorner.y);
-        averageY /= 2;
-        
-        EyeRegion.eyeRegionStartY = (int) (averageY - faceFactorHeight);
-        EyeRegion.eyeRegionStartX = (int) (faceFactorWidth);
-        EyeRegion.eyeRegionWidth = (int) (face.width() - 2 * faceFactorWidth);
-        EyeRegion.eyeRegionHeight = (int) (faceFactorHeight * 1.5);
-        if(averageY<=0){
-            Logger.getLogger("Eye ragion impossible to detect!", null);
-        }
-        if( EyeRegion.eyeRegionStartY<=0 || EyeRegion.eyeRegionStartX<=0 ||
-                EyeRegion.eyeRegionWidth<=0 || EyeRegion.eyeRegionHeight<=0){
-            EyeRegion.eyeRegionStartY = 0;
-        EyeRegion.eyeRegionStartX = 0;
-        EyeRegion.eyeRegionWidth = 0;
-        EyeRegion.eyeRegionHeight = 0;
-        EyeRegion.unavailable=true;
-        }
-        Mat eyeArea;
-        eyeArea = new Mat(face, new Rect(
-                EyeRegion.eyeRegionStartX,
-                EyeRegion.eyeRegionStartY,
-                EyeRegion.eyeRegionWidth,
-                EyeRegion.eyeRegionHeight));
-        imwrite("eyeRegion.png", eyeArea);
-        this.eyeRegion = eyeArea;
-
     }
-
+//        face.convertTo(face, 0, 0.7, 0);
+//
+//        //imwrite("blurred.png",face);
+//        //Create empty image of same size as input face
+//        Mat image = new Mat(new Size(face.width(), face.height()),
+//                face.type(), new Scalar(0, 0, 0));
+//
+//        //Subtracting BLUE channel from RED channel
+//        Vector<Mat> channels = new Vector<>();
+//        split(face, channels);
+//        for (int i = 0; i < face.width(); ++i) {
+//            for (int j = 0; j < face.height(); ++j) {
+//                int value;
+//                value = (int) (channels.get(2).get(i, j)[0] - channels.get(1).get(i, j)[0]);
+//                image.put(i, j, new double[]{value, value, value});
+//            }
+//        }
+//        imwrite("RED-BLUEimage.png", image);
+//
+//        image.convertTo(image, 0, 5, 0);
+//        //imwrite("contrasted.png",image);
+//        threshold(image, image, 5, 255, Imgproc.THRESH_BINARY);
+//
+//        //Morphological closing
+//        Mat mask = Imgproc.getStructuringElement(Imgproc.MORPH_CROSS, new Size(5, 5));
+//        erode(image, image, mask);
+//        dilate(image, image, mask);
+//
+//        //Clearing bottom half on an image (eyes are in top half
+//        for (int i = image.height() / 2; i < image.height(); i++) {
+//            for (int j = 0; j < face.width(); j++) {
+//                image.put(i, j, new double[]{255, 255, 255});
+//            }
+//        }
+//        imwrite("bottomCleaned.png", image);
+//
+//        //Mirror reflection
+//        Mat flippedImage = new Mat();
+//        Core.flip(image, flippedImage, 1);
+//
+//        //Bit xor operator- more visible eyes
+//        Core.bitwise_xor(image, flippedImage, image);
+//
+//        //We are intrested just in places of changing intensity- gradient operator
+//        int[] gradientMask = new int[9];
+//        gradientMask[0] = -1;
+//        gradientMask[1] = -5;
+//        gradientMask[2] = -1;
+//        gradientMask[3] = 0;
+//        gradientMask[4] = 0;
+//        gradientMask[5] = 0;
+//        gradientMask[6] = 1;
+//        gradientMask[7] = 5;
+//        gradientMask[8] = 1;
+//
+//        image = StaticFunctions.convolution(gradientMask, image);
+//
+//        //Vertical projection to find proper extrema
+//        long hist[] = new long[image.width()];
+//        for (int i = 0; i < image.width(); i++) {
+//            for (int j = 0; j < image.height(); j++) {
+//                hist[i] += image.get(j, i)[0];
+//            }
+//
+//        }
+//
+//        //Vertical projection
+//        //We process just middle 3/5 of the face
+//        boolean leftOut = false, leftInn = false,
+//                rightInn = false, rightOut = false;
+//        for (int i = (int) (image.width() * 0.2); i < (int) (image.width() * 0.8); i++) {
+//            if (i < image.width() / 2) {
+//                if (hist[i] > 0 && hist[i - 1] < hist[i] && leftOut == false) {
+//                    EyeRegion.leftOuterEyeCorner.x = i;
+//                    leftOut = true;
+//                } else if (hist[i] > 0 && hist[i + 1] < hist[i] && leftInn == false) {
+//                    EyeRegion.leftInnerEyeCorner.x = i + 10;
+//                    leftInn = true;
+//                }
+//            } else {
+//                if (hist[i] > 0 && hist[i - 1] == 0 && rightInn == false) {
+//                    EyeRegion.rightInnerEyeCorner.x = i;
+//                    rightInn = true;
+//                } else if (hist[i] > 0 && hist[i + 1] == 0 && rightOut == false) {
+//                    EyeRegion.rightOuterEyeCorner.x = i;
+//                    rightOut = true;
+//                }
+//            }
+//
+//        }
+//        /*
+//         * We look for y coordinate determnining the highest sum
+//         * of the intenisties of detected x points
+//         */
+//        int max = 0, y = 0;
+//        for (int i = 0; i < image.height(); ++i) {
+//            int temp = 0;
+//            temp = (int) (image.get(i,
+//                    (int) EyeRegion.leftOuterEyeCorner.x)[0]);
+//            temp += (int) (image.get(i,
+//                    (int) EyeRegion.leftInnerEyeCorner.x)[0]);
+//            temp += (int) (image.get(i,
+//                    (int) EyeRegion.rightInnerEyeCorner.x)[0]);
+//            temp += (int) (image.get(i,
+//                    (int) EyeRegion.rightOuterEyeCorner.x)[0]);
+//            if (temp > max) {
+//                max = temp;
+//                y = i;
+//            }
+//        }
+//        EyeRegion.leftOuterEyeCorner.y = y;
+//        EyeRegion.leftInnerEyeCorner.y = y;
+//        EyeRegion.rightInnerEyeCorner.y = y;
+//        EyeRegion.rightOuterEyeCorner.y = y;
+//
+//       
+//
+//        //Face geometry factors
+//        //Region of intrest- 2/5 of face height
+//        float faceFactorWidth = image.width() / 8;
+//        float faceFactorHeight = image.height() / 5;
+//
+//        int averageY = (int) (EyeRegion.rightInnerEyeCorner.y + EyeRegion.leftInnerEyeCorner.y);
+//        averageY /= 2;
+//        
+//        EyeRegion.eyeRegionStartY = (int) (averageY - faceFactorHeight);
+//        EyeRegion.eyeRegionStartX = (int) (faceFactorWidth);
+//        EyeRegion.eyeRegionWidth = (int) (face.width() - 2 * faceFactorWidth);
+//        EyeRegion.eyeRegionHeight = (int) (faceFactorHeight * 1.5);
+//        if(averageY<=0){
+//            Logger.getLogger("Eye ragion impossible to detect!", null);
+//        }
+//        if( EyeRegion.eyeRegionStartY<=0 || EyeRegion.eyeRegionStartX<=0 ||
+//                EyeRegion.eyeRegionWidth<=0 || EyeRegion.eyeRegionHeight<=0){
+//            EyeRegion.eyeRegionStartY = 0;
+//        EyeRegion.eyeRegionStartX = 0;
+//        EyeRegion.eyeRegionWidth = 0;
+//        EyeRegion.eyeRegionHeight = 0;
+//        EyeRegion.unavailable=true;
+//        }
+//        Mat eyeArea;
+//        eyeArea = new Mat(face, new Rect(
+//                EyeRegion.eyeRegionStartX,
+//                EyeRegion.eyeRegionStartY,
+//                EyeRegion.eyeRegionWidth,
+//                EyeRegion.eyeRegionHeight));
+//        imwrite("eyeRegion.png", eyeArea);
+//        this.eyeRegion = eyeArea;
+//
+//    }
+//}
     public static void areEyebrowsWrinkles() {
-        Rect wrinklesRect=new Rect(
-                (int) (leftInnerEyebrowsCorner.x*1.1), (int) (eyeRegionStartY),
-                (int) ((rightInnerEyebrowsCorner.x - leftInnerEyebrowsCorner.x)*0.8),
-                (int) (rightOuterEyeCorner.y-eyeRegionStartY));
+        //setting parameters
+        int height=(int) ( abs(rightInnerEyebrowsCorner.y-rightInnerEyeCorner.y)*1.2);
+        int width=(int) (rightInnerEyeCorner.x-leftInnerEyeCorner.x);
+        int y= (int) (rightInnerEyebrowsCorner.y-height/2);
+        int x=(int) leftInnerEyeCorner.x;
+        
+        Rect wrinklesRect=new Rect(x,y,width,height);
         Mat wrinklesArea = new Mat(_face, wrinklesRect).clone();
         
-        wrinklesThreshold=(int) (wrinklesArea.width()*wrinklesArea.height()*0.025);
+        wrinklesThreshold=(int) (wrinklesArea.width()*wrinklesArea.height()*0.06);
         //Wrinkles between eyebrows are vertical
         int[] gradientMask = new int[9];
         gradientMask[0] = -1;
