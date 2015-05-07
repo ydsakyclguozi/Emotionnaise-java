@@ -223,6 +223,8 @@ public final class Eye {
             EyeRegion.rightLowerEyelid.x=(EyeRegion.rightOuterEyeCorner.x+
                     EyeRegion.rightInnerEyeCorner.x)/2;
             EyeRegion.rightUpperEyelid.x=EyeRegion.rightLowerEyelid.x;
+            EyeRegion.rightEyeOpeness=(EyeRegion.rightUpperEyelid.y
+                    -EyeRegion.rightLowerEyelid.y);
        }
        else{
            double regionWidth;
@@ -235,6 +237,8 @@ public final class Eye {
             EyeRegion.leftLowerEyelid.x=(EyeRegion.leftInnerEyeCorner.x+
                     EyeRegion.leftOuterEyeCorner.x)/2;
             EyeRegion.leftUpperEyelid.x=EyeRegion.leftLowerEyelid.x;
+            EyeRegion.leftEyeOpeness=(EyeRegion.leftUpperEyelid.y
+                    -EyeRegion.leftLowerEyelid.y);
        }
        
         
@@ -283,8 +287,8 @@ public final class Eye {
     }
     private Rect recalculate(Rect _input,Mat canvas){
         Rect output=new Rect();
-        int width=(int) (_input.width*1.5);
-        int height=(int) (_input.height*1.5);
+        int width=(int) (_input.width*1.3);
+        int height=(int) (_input.height*1.3);
         output.x=_input.x-(width-_input.width)/2;
         output.y=_input.y-(height)/4;
         if(output.x<0){

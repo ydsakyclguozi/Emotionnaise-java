@@ -6,20 +6,14 @@
 package emotion;
 
 import static java.lang.Math.abs;
-import java.util.Vector;
-import java.util.logging.Logger;
 import org.opencv.core.Core;
-import static org.opencv.core.Core.split;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
 import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
-import org.opencv.core.Size;
 import static org.opencv.imgcodecs.Imgcodecs.imwrite;
 import org.opencv.imgproc.Imgproc;
-import static org.opencv.imgproc.Imgproc.dilate;
-import static org.opencv.imgproc.Imgproc.erode;
 import static org.opencv.imgproc.Imgproc.threshold;
 
 /**
@@ -57,6 +51,9 @@ public class EyeRegion {
     public static Point rightInnerEyebrowsCorner;
     public static Point leftOuterEyebrowsCorner;
     public static Point leftInnerEyebrowsCorner;
+    
+    public static double rightEyeOpeness;
+    public static double leftEyeOpeness;
 
     public EyeRegion(Mat face) {
         _face = face;
@@ -230,12 +227,12 @@ public class EyeRegion {
         int height=(int) ( abs(rightInnerEyebrowsCorner.y-rightInnerEyeCorner.y)*1.2);
         int width=(int) (rightInnerEyeCorner.x-leftInnerEyeCorner.x);
         int y= (int) (rightInnerEyebrowsCorner.y-height/2);
-        int x=(int) leftInnerEyeCorner.x;
+        int x=(int) leftInnerEyebrowsCorner.x;
         
         Rect wrinklesRect=new Rect(x,y,width,height);
         Mat wrinklesArea = new Mat(_face, wrinklesRect).clone();
         
-        wrinklesThreshold=(int) (wrinklesArea.width()*wrinklesArea.height()*0.06);
+        wrinklesThreshold=(int) (wrinklesArea.width()*wrinklesArea.height()*0.085);
         //Wrinkles between eyebrows are vertical
         int[] gradientMask = new int[9];
         gradientMask[0] = -1;

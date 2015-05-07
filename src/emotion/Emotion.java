@@ -27,7 +27,7 @@ public class Emotion {
         String path="E:\\Studia\\II YEAR\\Team Project\\Face database\\";
            Face face1=new Face(path+"1.jpg");
 
-//        String path="src\\TestingSet\\emo1.jpg";
+//        String path="src\\TestingSet\\emo8.jpg";
 //        Face face1=new Face(path);
         
         face1.detectFace();
