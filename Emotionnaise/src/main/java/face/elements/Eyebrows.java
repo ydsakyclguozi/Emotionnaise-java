@@ -32,8 +32,8 @@ public class Eyebrows implements FaceElement {
 
 	@Autowired
 	private Eyes eyes;
-	
-	//Classified points fro eyebrows corners
+
+	// Classified points fro eyebrows corners
 	List<Point> classyfiedPoints4Right;
 	List<Point> classyfiedPoints4Left;
 
@@ -55,15 +55,15 @@ public class Eyebrows implements FaceElement {
 		Imgproc.cvtColor(this.eyes.getRightEye().clone(), greyRightEye,
 				Imgproc.COLOR_BGR2GRAY);
 		Imgproc.medianBlur(greyRightEye, greyRightEye, 5);
-		Imgproc.Canny(greyRightEye, greyRightEye,80 ,160);
-		imwrite("preprocessed4EyebrowsDetectionRightEye.png",greyRightEye);
+		Imgproc.Canny(greyRightEye, greyRightEye, 80, 160);
+		imwrite("preprocessed4EyebrowsDetectionRightEye.png", greyRightEye);
 
 		Mat greyLeftEye = new Mat();
 		Imgproc.cvtColor(this.eyes.getLeftEye().clone(), greyLeftEye,
 				Imgproc.COLOR_BGR2GRAY);
 		Imgproc.medianBlur(greyLeftEye, greyLeftEye, 5);
-		Imgproc.Canny(greyLeftEye, greyLeftEye,80 ,160);
-		imwrite("preprocessed4EyebrowsDetectionLeftEye.png",greyLeftEye);
+		Imgproc.Canny(greyLeftEye, greyLeftEye, 80, 160);
+		imwrite("preprocessed4EyebrowsDetectionLeftEye.png", greyLeftEye);
 
 		// Proper algorithm
 		MatOfPoint features4rightEye = new MatOfPoint();
@@ -96,12 +96,12 @@ public class Eyebrows implements FaceElement {
 		rejectFalses(classyfiedPoints4Left, rejectThreshold4LeftEye);
 		// Drawing points
 		for (Point point : classyfiedPoints4Right) {
-			FeatureStore.drawCross(this.eyes.getRightEye(), point, new Scalar(255, 255,
-					255));
+			FeatureStore.drawCross(this.eyes.getRightEye(), point, new Scalar(
+					255, 255, 255));
 		}
 		for (Point point : classyfiedPoints4Left) {
-			FeatureStore.drawCross( this.eyes.getLeftEye(), point,
-					new Scalar(255, 255, 255));
+			FeatureStore.drawCross(this.eyes.getLeftEye(), point, new Scalar(
+					255, 255, 255));
 		}
 		imwrite("haarisCorner4Right.png", this.eyes.getRightEye());
 		imwrite("haarisCorner4Left.png", this.eyes.getLeftEye());
@@ -112,19 +112,8 @@ public class Eyebrows implements FaceElement {
 			Log.error("Empty list of points!");
 			return;
 		}
-		// Order according to Y coordinate
-		Collections.sort(points, new Comparator<Point>() {
-			public int compare(Point o1, Point o2) {
-				if (o1.y < o2.y) {
-					return -1;
-				} else if (o1.y == o2.y) {
-					return 0;
-				} else {
-					return 1;
-				}
-			}
-		});
-		int medianY = (int) points.get(points.size() / 2).y;
+
+		int medianY = Face.medianY(points);
 		if (Log.isInfoEnabled()) {
 			Log.info("Median Y at: " + medianY);
 		}
@@ -134,7 +123,7 @@ public class Eyebrows implements FaceElement {
 				continue;
 			} else {
 				points.remove(i);
-				//Size shrink by 1 thus index also has to
+				// Size shrink by 1 thus index also has to
 				i--;
 				rejects++;
 			}
@@ -161,16 +150,17 @@ public class Eyebrows implements FaceElement {
 				}
 			}
 		});
-		//We save just 2 extreme points
-		Point pt1=points.get(0);
-		Point pt2=points.get(points.size()-1);
+		// We save just 2 extreme points
+		Point pt1 = points.get(0);
+		Point pt2 = points.get(points.size() - 1);
 		points.clear();
 		points.add(pt1);
 		points.add(pt2);
-		//Recalculation of the points relatively to the face image
+		// Recalculation of the points relatively to the face image
 		if (Log.isInfoEnabled()) {
-			Log.info("Eyebrows' corners localized at positions x,y: "+
-		pt1.x+","+pt1.y+" and "+pt2.x+","+pt2.y+" in eyeROI image!");
+			Log.info("Eyebrows' corners localized at positions x,y: " + pt1.x
+					+ "," + pt1.y + " and " + pt2.x + "," + pt2.y
+					+ " in eyeROI image!");
 		}
 
 	}
@@ -185,43 +175,57 @@ public class Eyebrows implements FaceElement {
 			Log.info("Starting detecting eyebrows");
 		}
 		haaris4Eyes();
-		
-		//Recalculate points relatively to the whole face
-			//LEFT EYE
-		if(classyfiedPoints4Left.size()!=2){
+
+		// Recalculate points relatively to the whole face
+		// LEFT EYE
+		if (classyfiedPoints4Left.size() != 2) {
 			Log.error("Inappropriate value of eye corners!");
 			return null;
 		}
-		Point pt1=classyfiedPoints4Left.get(0);
-		Point pt2=classyfiedPoints4Left.get(1);
-		pt1.x+=this.eyes.getLeftEyeRect().x;
-		pt1.y+=this.eyes.getLeftEyeRect().y;
-		pt2.x+=this.eyes.getLeftEyeRect().x;
-		pt2.y+=this.eyes.getLeftEyeRect().y;
+		Point pt1 = classyfiedPoints4Left.get(0);
+		Point pt2 = classyfiedPoints4Left.get(1);
+		pt1.x += this.eyes.getLeftEyeRect().x;
+		pt1.y += this.eyes.getLeftEyeRect().y;
+		pt2.x += this.eyes.getLeftEyeRect().x;
+		pt2.y += this.eyes.getLeftEyeRect().y;
 		if (Log.isInfoEnabled()) {
-			Log.info("Eyebrows' corners for the left eyebrow localized at positions x,y: "+
-		pt1.x+","+pt1.y+" and "+pt2.x+","+pt2.y+" relatively to face image!");
+			Log.info("Eyebrows' corners for the left eyebrow localized at positions x,y: "
+					+ pt1.x
+					+ ","
+					+ pt1.y
+					+ " and "
+					+ pt2.x
+					+ ","
+					+ pt2.y
+					+ " relatively to face image!");
 		}
 		FeatureStore.setFeaturePoint(FaceFeatures.LeftEyebrowOuterCorner, pt1);
 		FeatureStore.setFeaturePoint(FaceFeatures.LeftEyebrowInnerCorner, pt2);
-			//Right EYE
-		if(classyfiedPoints4Right.size()!=2){
+		
+		// Right EYE
+		if (classyfiedPoints4Right.size() != 2) {
 			Log.error("Inappropriate value of eye corners!");
 			return null;
 		}
-		Point pt3=classyfiedPoints4Right.get(0);
-		Point pt4=classyfiedPoints4Right.get(1);
-		pt3.x+=this.eyes.getRightEyeRect().x;
-		pt3.y+=this.eyes.getRightEyeRect().y;
-		pt4.x+=this.eyes.getRightEyeRect().x;
-		pt4.y+=this.eyes.getRightEyeRect().y;
+		Point pt3 = classyfiedPoints4Right.get(0);
+		Point pt4 = classyfiedPoints4Right.get(1);
+		pt3.x += this.eyes.getRightEyeRect().x;
+		pt3.y += this.eyes.getRightEyeRect().y;
+		pt4.x += this.eyes.getRightEyeRect().x;
+		pt4.y += this.eyes.getRightEyeRect().y;
 		if (Log.isInfoEnabled()) {
-			Log.info("Eyebrows' corners for the right eyebrow localized at positions x,y: "+
-		pt3.x+","+pt3.y+" and "+pt4.x+","+pt4.y+" relatively to face image!");
+			Log.info("Eyebrows' corners for the right eyebrow localized at positions x,y: "
+					+ pt3.x
+					+ ","
+					+ pt3.y
+					+ " and "
+					+ pt4.x
+					+ ","
+					+ pt4.y
+					+ " relatively to face image!");
 		}
 		FeatureStore.setFeaturePoint(FaceFeatures.RightEyebrowInnerCorner, pt3);
 		FeatureStore.setFeaturePoint(FaceFeatures.RightEyebrowOuterCorner, pt4);
-		
 
 		return null;
 	}

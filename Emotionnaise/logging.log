@@ -4569,3 +4569,1023 @@
 2015-05-19 22:04:11 WARN  FeatureStore:50 - Unable to mark feature!
 2015-05-19 22:04:11 INFO  Analyzator:59 - Closing application context
 2015-05-19 22:04:11 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Tue May 19 22:04:10 CEST 2015]; root of context hierarchy
+2015-05-20 21:46:45 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:46:45 CEST 2015]; root of context hierarchy
+2015-05-20 21:46:45 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 21:46:46 INFO  Face:43 - Loading head image
+2015-05-20 21:46:46 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 21:46:46 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 21:46:46 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 21:46:46 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 21:46:46 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 21:46:46 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:46:46 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 21:46:46 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:46:46 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 21:46:46 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 21:46:46 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 21:46:46 INFO  Eyes:152 - Grey copies blurred with Gaussian blur: mask 3x3, 0.6 st.dev.
+2015-05-20 21:46:46 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 21:46:46 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 21:46:46 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 21:46:46 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 21:46:46 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,54.0
+2015-05-20 21:46:46 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 21:46:46 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 21:46:46 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 21:46:46 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:46:46 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 21:46:46 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 21:46:46 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:46:46 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 21:46:46 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 21:46:46 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 21:46:46 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 21:46:46 INFO  Mouth:87 - Start mouth detection
+2015-05-20 21:46:46 INFO  Mouth:44 - Clone of mouth region ROI created
+2015-05-20 21:46:46 INFO  Mouth:62 - Gaussian blur apply for mouth ROI
+2015-05-20 21:46:46 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:46:46 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:46:46 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:46:46 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:46:46 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:46:46 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:46:46 INFO  Analyzator:59 - Closing application context
+2015-05-20 21:46:46 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:46:45 CEST 2015]; root of context hierarchy
+2015-05-20 21:47:13 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:47:13 CEST 2015]; root of context hierarchy
+2015-05-20 21:47:14 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 21:47:14 INFO  Face:43 - Loading head image
+2015-05-20 21:47:14 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 21:47:15 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 21:47:15 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 21:47:15 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 21:47:15 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 21:47:15 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:47:15 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=41 HEIGHT=41 (x,y)=22,25
+2015-05-20 21:47:15 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:47:15 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=58 HEIGHT=58 (x,y)=62,11
+2015-05-20 21:47:15 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 21:47:15 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 21:47:15 INFO  Eyes:152 - Grey copies blurred with Gaussian blur: mask 3x3, 0.6 st.dev.
+2015-05-20 21:47:15 INFO  Eyes:227 - Point for right outer eye corner set to: 103.0,33.0
+2015-05-20 21:47:15 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 21:47:15 INFO  Eyes:238 - Point for right inner eye corner set to: 74.0,54.0
+2015-05-20 21:47:15 INFO  Eyes:249 - Point for left outer eye corner set to: 29.0,41.0
+2015-05-20 21:47:15 INFO  Eyes:260 - Point for left inner eye corner set to: 55.0,53.0
+2015-05-20 21:47:15 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 21:47:15 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 21:47:15 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 21:47:15 INFO  Eyebrows:129 - Median Y at: 24
+2015-05-20 21:47:15 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 21:47:15 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 14.0,25.0 and 48.0,24.0 in eyeROI image!
+2015-05-20 21:47:15 INFO  Eyebrows:129 - Median Y at: 14
+2015-05-20 21:47:15 INFO  Eyebrows:143 - Rejected points: 0 during Y thresholding
+2015-05-20 21:47:15 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 7.0,15.0 and 33.0,14.0 in eyeROI image!
+2015-05-20 21:47:15 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 29.0,40.0 and 55.0,39.0 relatively to face image!
+2015-05-20 21:47:15 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 76.0,36.0 and 110.0,35.0 relatively to face image!
+2015-05-20 21:47:15 INFO  Mouth:87 - Start mouth detection
+2015-05-20 21:47:15 INFO  Mouth:44 - Clone of mouth region ROI created
+2015-05-20 21:47:15 INFO  Mouth:62 - Gaussian blur apply for mouth ROI
+2015-05-20 21:47:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:47:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:47:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:47:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:47:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:47:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:47:15 INFO  Analyzator:59 - Closing application context
+2015-05-20 21:47:15 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:47:13 CEST 2015]; root of context hierarchy
+2015-05-20 21:48:54 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:48:54 CEST 2015]; root of context hierarchy
+2015-05-20 21:48:54 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 21:48:55 INFO  Face:43 - Loading head image
+2015-05-20 21:48:55 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 21:48:55 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 21:48:55 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 21:48:55 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 21:48:55 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 21:48:55 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:48:55 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=41 HEIGHT=41 (x,y)=22,25
+2015-05-20 21:48:55 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:48:55 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=58 HEIGHT=58 (x,y)=62,11
+2015-05-20 21:48:55 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 21:48:55 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 21:48:55 INFO  Eyes:152 - Grey copies blurred with Gaussian blur: mask 3x3, 0.6 st.dev.
+2015-05-20 21:48:55 INFO  Eyes:227 - Point for right outer eye corner set to: 104.0,32.0
+2015-05-20 21:48:55 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 21:48:55 INFO  Eyes:238 - Point for right inner eye corner set to: 75.0,53.0
+2015-05-20 21:48:55 INFO  Eyes:249 - Point for left outer eye corner set to: 30.0,40.0
+2015-05-20 21:48:55 INFO  Eyes:260 - Point for left inner eye corner set to: 53.0,54.0
+2015-05-20 21:48:55 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 21:48:55 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 21:48:55 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 21:48:55 INFO  Eyebrows:129 - Median Y at: 24
+2015-05-20 21:48:55 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 21:48:55 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 14.0,25.0 and 48.0,24.0 in eyeROI image!
+2015-05-20 21:48:55 INFO  Eyebrows:129 - Median Y at: 14
+2015-05-20 21:48:55 INFO  Eyebrows:143 - Rejected points: 0 during Y thresholding
+2015-05-20 21:48:55 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 7.0,15.0 and 33.0,14.0 in eyeROI image!
+2015-05-20 21:48:55 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 29.0,40.0 and 55.0,39.0 relatively to face image!
+2015-05-20 21:48:55 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 76.0,36.0 and 110.0,35.0 relatively to face image!
+2015-05-20 21:48:55 INFO  Mouth:87 - Start mouth detection
+2015-05-20 21:48:55 INFO  Mouth:44 - Clone of mouth region ROI created
+2015-05-20 21:48:55 INFO  Mouth:62 - Gaussian blur apply for mouth ROI
+2015-05-20 21:48:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:48:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:48:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:48:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:48:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:48:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:48:56 INFO  Analyzator:59 - Closing application context
+2015-05-20 21:48:56 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:48:54 CEST 2015]; root of context hierarchy
+2015-05-20 21:49:51 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:49:51 CEST 2015]; root of context hierarchy
+2015-05-20 21:49:52 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 21:49:52 INFO  Face:43 - Loading head image
+2015-05-20 21:49:52 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 21:49:52 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 21:49:52 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 21:49:52 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 21:49:52 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 21:49:52 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:49:52 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 21:49:52 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:49:52 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 21:49:52 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 21:49:52 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 21:49:52 INFO  Eyes:152 - Grey copies blurred with Gaussian blur: mask 3x3, 0.6 st.dev.
+2015-05-20 21:49:52 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 21:49:52 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 21:49:52 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 21:49:52 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 21:49:52 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 21:49:52 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 21:49:52 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 21:49:52 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 21:49:52 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:49:52 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 21:49:52 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 21:49:52 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:49:52 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 21:49:52 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 21:49:52 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 21:49:52 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 21:49:52 INFO  Mouth:87 - Start mouth detection
+2015-05-20 21:49:52 INFO  Mouth:44 - Clone of mouth region ROI created
+2015-05-20 21:49:52 INFO  Mouth:62 - Gaussian blur apply for mouth ROI
+2015-05-20 21:49:52 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:49:52 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:49:52 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:49:52 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:49:52 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:49:52 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:49:52 INFO  Analyzator:59 - Closing application context
+2015-05-20 21:49:52 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:49:51 CEST 2015]; root of context hierarchy
+2015-05-20 21:57:30 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:57:30 CEST 2015]; root of context hierarchy
+2015-05-20 21:57:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 21:57:31 INFO  Face:43 - Loading head image
+2015-05-20 21:57:31 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 21:57:31 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 21:57:31 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 21:57:31 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 21:57:31 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 21:57:31 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:57:31 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 21:57:31 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:57:31 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 21:57:31 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 21:57:31 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 21:57:31 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 21:57:31 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 21:57:31 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 21:57:31 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 21:57:31 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 21:57:31 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 21:57:31 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 21:57:31 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 21:57:31 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 21:57:31 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:57:31 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 21:57:31 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 21:57:31 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:57:31 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 21:57:31 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 21:57:31 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 21:57:31 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 21:57:31 INFO  Mouth:107 - Start mouth detection
+2015-05-20 21:57:31 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 21:57:31 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 21:57:31 INFO  Mouth:96 - Gaussian blur apply for mouth ROI
+2015-05-20 21:57:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:57:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:57:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:57:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:57:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:57:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:57:31 INFO  Analyzator:59 - Closing application context
+2015-05-20 21:57:31 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:57:30 CEST 2015]; root of context hierarchy
+2015-05-20 21:58:45 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:58:45 CEST 2015]; root of context hierarchy
+2015-05-20 21:58:45 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 21:58:45 INFO  Face:43 - Loading head image
+2015-05-20 21:58:45 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 21:58:46 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 21:58:46 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 21:58:46 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 21:58:46 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 21:58:46 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:58:46 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 21:58:46 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:58:46 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 21:58:46 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 21:58:46 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 21:58:46 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 21:58:46 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 21:58:46 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 21:58:46 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 21:58:46 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 21:58:46 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 21:58:46 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 21:58:46 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 21:58:46 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 21:58:46 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:58:46 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 21:58:46 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 21:58:46 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:58:46 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 21:58:46 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 21:58:46 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 21:58:46 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 21:58:46 INFO  Mouth:109 - Start mouth detection
+2015-05-20 21:58:46 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 21:58:46 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 21:58:46 INFO  Mouth:96 - Points rejected during initial filtrating: 9
+2015-05-20 21:59:30 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:59:30 CEST 2015]; root of context hierarchy
+2015-05-20 21:59:30 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 21:59:31 INFO  Face:43 - Loading head image
+2015-05-20 21:59:31 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 21:59:31 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 21:59:31 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 21:59:31 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 21:59:31 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 21:59:31 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:59:31 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 21:59:31 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 21:59:31 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 21:59:31 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 21:59:31 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 21:59:31 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 21:59:31 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 21:59:31 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 21:59:31 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 21:59:31 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 21:59:31 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 21:59:31 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 21:59:31 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 21:59:31 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 21:59:31 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:59:31 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 21:59:31 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 21:59:31 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 21:59:31 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 21:59:31 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 21:59:31 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 21:59:31 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 21:59:31 INFO  Mouth:108 - Start mouth detection
+2015-05-20 21:59:31 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 21:59:31 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 21:59:31 INFO  Mouth:96 - Points rejected during initial filtrating: 9
+2015-05-20 21:59:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:59:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:59:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:59:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:59:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:59:31 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 21:59:31 INFO  Analyzator:59 - Closing application context
+2015-05-20 21:59:31 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 21:59:30 CEST 2015]; root of context hierarchy
+2015-05-20 22:00:14 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:00:14 CEST 2015]; root of context hierarchy
+2015-05-20 22:00:14 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:00:14 INFO  Face:43 - Loading head image
+2015-05-20 22:00:14 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 22:00:14 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 22:00:14 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 22:00:14 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:00:14 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:00:15 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:00:15 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:00:15 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:00:15 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:00:15 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:00:15 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:00:15 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:00:15 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:00:15 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:00:15 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:00:15 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:00:15 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:00:15 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 22:00:15 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:00:15 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:00:15 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:00:15 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 22:00:15 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:00:15 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:00:15 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 22:00:15 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:00:15 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:00:15 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:00:15 INFO  Mouth:108 - Start mouth detection
+2015-05-20 22:00:15 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:00:15 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:00:15 INFO  Mouth:96 - Points rejected during initial filtrating: 12
+2015-05-20 22:00:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:15 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:15 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:00:15 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:00:14 CEST 2015]; root of context hierarchy
+2015-05-20 22:00:55 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:00:55 CEST 2015]; root of context hierarchy
+2015-05-20 22:00:55 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:00:56 INFO  Face:43 - Loading head image
+2015-05-20 22:00:56 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 22:00:56 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 22:00:56 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 22:00:56 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:00:56 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:00:56 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:00:56 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:00:56 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:00:56 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:00:56 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:00:56 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:00:56 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:00:56 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:00:56 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:00:56 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:00:56 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:00:56 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:00:56 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 22:00:56 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:00:56 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:00:56 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:00:56 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 22:00:56 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:00:56 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:00:56 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 22:00:56 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:00:56 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:00:56 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:00:56 INFO  Mouth:110 - Start mouth detection
+2015-05-20 22:00:56 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:00:56 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:00:56 INFO  Mouth:98 - Points rejected during initial filtrating: 9
+2015-05-20 22:00:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:00:56 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:00:56 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:00:55 CEST 2015]; root of context hierarchy
+2015-05-20 22:01:33 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:01:33 CEST 2015]; root of context hierarchy
+2015-05-20 22:01:33 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:01:34 INFO  Face:43 - Loading head image
+2015-05-20 22:01:34 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 22:01:34 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 22:01:34 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 22:01:34 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:01:34 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:01:34 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:01:34 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:01:34 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:01:34 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:01:34 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:01:34 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:01:34 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:01:34 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:01:34 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:01:34 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:01:34 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:01:34 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:01:34 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 22:01:34 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:01:34 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:01:34 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:01:34 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 22:01:34 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:01:34 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:01:34 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 22:01:34 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:01:34 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:01:34 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:01:34 INFO  Mouth:110 - Start mouth detection
+2015-05-20 22:01:34 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:01:34 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:01:34 INFO  Mouth:98 - Points rejected during initial filtrating: 9
+2015-05-20 22:01:34 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:01:34 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:01:34 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:01:34 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:01:34 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:01:34 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:01:34 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:01:34 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:01:33 CEST 2015]; root of context hierarchy
+2015-05-20 22:02:13 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:02:13 CEST 2015]; root of context hierarchy
+2015-05-20 22:02:13 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:02:13 INFO  Face:43 - Loading head image
+2015-05-20 22:02:13 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 22:02:14 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 22:02:14 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 22:02:14 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:02:14 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:02:14 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:02:14 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:02:14 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:02:14 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:02:14 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:02:14 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:02:14 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:02:14 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:02:14 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:02:14 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:02:14 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:02:14 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:02:14 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 22:02:14 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:02:14 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:02:14 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:02:14 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 22:02:14 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:02:14 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:02:14 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 22:02:14 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:02:14 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:02:14 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:02:14 INFO  Mouth:111 - Start mouth detection
+2015-05-20 22:02:14 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:02:14 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:02:14 INFO  Mouth:99 - Points rejected during initial filtrating: 9
+2015-05-20 22:02:14 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:14 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:14 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:14 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:14 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:14 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:14 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:02:14 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:02:13 CEST 2015]; root of context hierarchy
+2015-05-20 22:02:36 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:02:36 CEST 2015]; root of context hierarchy
+2015-05-20 22:02:36 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:02:36 INFO  Face:43 - Loading head image
+2015-05-20 22:02:36 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 22:02:37 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 22:02:37 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 22:02:37 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:02:37 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:02:37 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:02:37 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:02:37 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:02:37 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:02:37 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:02:37 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:02:37 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:02:37 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:02:37 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:02:37 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:02:37 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:02:37 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:02:37 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 22:02:37 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:02:37 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:02:37 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:02:37 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 22:02:37 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:02:37 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:02:37 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 22:02:37 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:02:37 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:02:37 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:02:37 INFO  Mouth:111 - Start mouth detection
+2015-05-20 22:02:37 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:02:37 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:02:37 INFO  Mouth:99 - Points rejected during initial filtrating: 40
+2015-05-20 22:02:37 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:37 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:37 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:37 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:37 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:37 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:02:37 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:02:37 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:02:36 CEST 2015]; root of context hierarchy
+2015-05-20 22:03:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:03:40 CEST 2015]; root of context hierarchy
+2015-05-20 22:03:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:03:40 INFO  Face:43 - Loading head image
+2015-05-20 22:03:40 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 22:03:41 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 22:03:41 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 22:03:41 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:03:41 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:03:41 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:03:41 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:03:41 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:03:41 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:03:41 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:03:41 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:03:41 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:03:41 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:03:41 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:03:41 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:03:41 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:03:41 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:03:41 INFO  Eyebrows:185 - Starting detecting eyebrows
+2015-05-20 22:03:41 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:03:41 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:03:41 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:03:41 INFO  Eyebrows:143 - Rejected points: 4 during Y thresholding
+2015-05-20 22:03:41 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:03:41 INFO  Eyebrows:129 - Median Y at: 18
+2015-05-20 22:03:41 INFO  Eyebrows:143 - Rejected points: 3 during Y thresholding
+2015-05-20 22:03:41 INFO  Eyebrows:172 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:03:41 INFO  Eyebrows:202 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:03:41 INFO  Eyebrows:219 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:03:41 INFO  Mouth:110 - Start mouth detection
+2015-05-20 22:03:41 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:03:41 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:03:41 INFO  Mouth:98 - Points rejected during initial filtrating: 9
+2015-05-20 22:03:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:03:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:03:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:03:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:03:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:03:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:03:41 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:03:41 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:03:40 CEST 2015]; root of context hierarchy
+2015-05-20 22:07:40 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:07:40 CEST 2015]; root of context hierarchy
+2015-05-20 22:07:40 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:07:41 INFO  Face:43 - Loading head image
+2015-05-20 22:07:41 INFO  Face:57 - Starting Haar cascade for face
+2015-05-20 22:07:41 INFO  Face:70 - We take just first detected face in the image
+2015-05-20 22:07:41 INFO  Face:80 - Resizing face image to 127x127px
+2015-05-20 22:07:41 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:07:41 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:07:41 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:07:41 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:07:41 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:07:41 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:07:41 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:07:41 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:07:41 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:07:41 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:07:41 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:07:41 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:07:41 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:07:41 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:07:41 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:07:41 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:07:41 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:07:41 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:07:41 INFO  Eyebrows:132 - Rejected points: 4 during Y thresholding
+2015-05-20 22:07:41 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:07:41 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:07:41 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:07:41 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:07:41 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:07:41 INFO  Eyebrows:216 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:07:41 INFO  Mouth:110 - Start mouth detection
+2015-05-20 22:07:41 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:07:41 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:07:41 INFO  Mouth:98 - Points rejected during initial filtrating: 9
+2015-05-20 22:07:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:07:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:07:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:07:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:07:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:07:41 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:07:41 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:07:41 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:07:40 CEST 2015]; root of context hierarchy
+2015-05-20 22:09:06 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:09:06 CEST 2015]; root of context hierarchy
+2015-05-20 22:09:06 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:09:06 INFO  Face:47 - Loading head image
+2015-05-20 22:09:06 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:09:07 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:09:07 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:09:07 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:09:07 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:09:07 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:09:07 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:09:07 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:09:07 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:09:07 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:09:07 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:09:07 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:09:07 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:09:07 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:09:07 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:09:07 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:09:07 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:09:07 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:09:07 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:09:07 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:09:07 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:09:07 INFO  Eyebrows:132 - Rejected points: 4 during Y thresholding
+2015-05-20 22:09:07 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:09:07 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:09:07 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:09:07 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:09:07 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:09:07 INFO  Eyebrows:216 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:09:07 INFO  Mouth:111 - Start mouth detection
+2015-05-20 22:09:07 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:09:07 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:09:07 INFO  Mouth:98 - Points rejected during initial filtrating: 9
+2015-05-20 22:09:07 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:09:07 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:09:07 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:09:07 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:09:07 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:09:07 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:09:07 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:09:07 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:09:06 CEST 2015]; root of context hierarchy
+2015-05-20 22:15:12 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:15:12 CEST 2015]; root of context hierarchy
+2015-05-20 22:15:12 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:15:12 INFO  Face:47 - Loading head image
+2015-05-20 22:15:12 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:15:12 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:15:12 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:15:12 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:15:12 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:15:12 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:15:12 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:15:12 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:15:12 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:15:12 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:15:12 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:15:12 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:15:12 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:15:12 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:15:12 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:15:12 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:15:12 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:15:12 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:15:12 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:15:12 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:15:12 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:15:12 INFO  Eyebrows:132 - Rejected points: 4 during Y thresholding
+2015-05-20 22:15:12 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:15:12 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:15:12 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:15:12 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:15:12 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:15:12 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:15:12 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:15:12 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:15:12 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:15:12 INFO  Mouth:103 - Points rejected during filtrating: 9
+2015-05-20 22:15:12 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:12 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:12 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:12 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:12 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:12 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:12 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:15:12 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:15:12 CEST 2015]; root of context hierarchy
+2015-05-20 22:15:35 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:15:35 CEST 2015]; root of context hierarchy
+2015-05-20 22:15:35 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:15:35 INFO  Face:47 - Loading head image
+2015-05-20 22:15:35 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:15:36 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:15:36 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:15:36 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:15:36 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:15:36 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:15:36 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=48 HEIGHT=48 (x,y)=8,19
+2015-05-20 22:15:36 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:15:36 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=50 HEIGHT=50 (x,y)=67,17
+2015-05-20 22:15:36 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:15:36 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:15:36 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:15:36 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,50.0
+2015-05-20 22:15:36 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:15:36 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:15:36 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,51.0
+2015-05-20 22:15:36 INFO  Eyes:260 - Point for left inner eye corner set to: 48.0,55.0
+2015-05-20 22:15:36 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:15:36 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:15:36 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:15:36 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:15:36 INFO  Eyebrows:132 - Rejected points: 4 during Y thresholding
+2015-05-20 22:15:36 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 6.0,22.0 and 41.0,18.0 in eyeROI image!
+2015-05-20 22:15:36 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:15:36 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:15:36 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 8.0,18.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:15:36 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,37.0 and 52.0,37.0 relatively to face image!
+2015-05-20 22:15:36 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 73.0,39.0 and 108.0,35.0 relatively to face image!
+2015-05-20 22:15:36 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:15:36 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:15:36 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:15:36 INFO  Mouth:103 - Points rejected during filtrating: 31
+2015-05-20 22:15:36 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:36 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:36 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:36 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:36 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:36 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:15:36 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:15:36 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:15:35 CEST 2015]; root of context hierarchy
+2015-05-20 22:16:58 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:16:58 CEST 2015]; root of context hierarchy
+2015-05-20 22:16:58 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:16:59 INFO  Face:47 - Loading head image
+2015-05-20 22:16:59 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:16:59 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:16:59 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:16:59 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:16:59 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:16:59 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:16:59 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=40 HEIGHT=40 (x,y)=13,22
+2015-05-20 22:16:59 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:16:59 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=45 HEIGHT=45 (x,y)=65,19
+2015-05-20 22:16:59 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:16:59 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:16:59 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:16:59 INFO  Eyes:227 - Point for right outer eye corner set to: 102.0,49.0
+2015-05-20 22:16:59 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:16:59 INFO  Eyes:238 - Point for right inner eye corner set to: 76.0,51.0
+2015-05-20 22:16:59 INFO  Eyes:249 - Point for left outer eye corner set to: 23.0,50.0
+2015-05-20 22:16:59 INFO  Eyes:260 - Point for left inner eye corner set to: 49.0,52.0
+2015-05-20 22:16:59 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:16:59 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:16:59 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:16:59 INFO  Eyebrows:118 - Median Y at: 14
+2015-05-20 22:16:59 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:16:59 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 14.0,15.0 and 42.0,16.0 in eyeROI image!
+2015-05-20 22:16:59 INFO  Eyebrows:118 - Median Y at: 13
+2015-05-20 22:16:59 INFO  Eyebrows:132 - Rejected points: 2 during Y thresholding
+2015-05-20 22:16:59 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 3.0,16.0 and 34.0,17.0 in eyeROI image!
+2015-05-20 22:16:59 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,38.0 and 47.0,39.0 relatively to face image!
+2015-05-20 22:16:59 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 79.0,34.0 and 107.0,35.0 relatively to face image!
+2015-05-20 22:16:59 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:16:59 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:16:59 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:16:59 INFO  Mouth:103 - Points rejected during filtrating: 36
+2015-05-20 22:16:59 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:16:59 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:16:59 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:16:59 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:16:59 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:16:59 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:16:59 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:16:59 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:16:58 CEST 2015]; root of context hierarchy
+2015-05-20 22:17:32 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:17:32 CEST 2015]; root of context hierarchy
+2015-05-20 22:17:32 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:17:33 INFO  Face:47 - Loading head image
+2015-05-20 22:17:33 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:17:33 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:17:33 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:17:33 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:17:33 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:17:33 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:17:33 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=40 HEIGHT=40 (x,y)=13,22
+2015-05-20 22:17:33 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:17:33 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=45 HEIGHT=45 (x,y)=65,19
+2015-05-20 22:17:33 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:17:33 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:17:33 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:17:33 INFO  Eyes:227 - Point for right outer eye corner set to: 102.0,49.0
+2015-05-20 22:17:33 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:17:33 INFO  Eyes:238 - Point for right inner eye corner set to: 76.0,51.0
+2015-05-20 22:17:33 INFO  Eyes:249 - Point for left outer eye corner set to: 23.0,50.0
+2015-05-20 22:17:33 INFO  Eyes:260 - Point for left inner eye corner set to: 49.0,52.0
+2015-05-20 22:17:33 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:17:33 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:17:33 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:17:33 INFO  Eyebrows:118 - Median Y at: 14
+2015-05-20 22:17:33 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:17:33 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 14.0,15.0 and 42.0,16.0 in eyeROI image!
+2015-05-20 22:17:33 INFO  Eyebrows:118 - Median Y at: 13
+2015-05-20 22:17:33 INFO  Eyebrows:132 - Rejected points: 2 during Y thresholding
+2015-05-20 22:17:33 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 3.0,16.0 and 34.0,17.0 in eyeROI image!
+2015-05-20 22:17:33 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,38.0 and 47.0,39.0 relatively to face image!
+2015-05-20 22:17:33 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 79.0,34.0 and 107.0,35.0 relatively to face image!
+2015-05-20 22:17:33 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:17:33 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:17:33 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:17:33 INFO  Mouth:103 - Points rejected during filtrating: 20
+2015-05-20 22:17:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:33 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:17:33 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:17:32 CEST 2015]; root of context hierarchy
+2015-05-20 22:17:55 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:17:55 CEST 2015]; root of context hierarchy
+2015-05-20 22:17:55 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:17:55 INFO  Face:47 - Loading head image
+2015-05-20 22:17:55 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:17:56 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:17:56 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:17:56 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:17:56 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:17:56 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:17:56 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=40 HEIGHT=40 (x,y)=13,22
+2015-05-20 22:17:56 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:17:56 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=45 HEIGHT=45 (x,y)=65,19
+2015-05-20 22:17:56 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:17:56 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:17:56 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:17:56 INFO  Eyes:227 - Point for right outer eye corner set to: 102.0,49.0
+2015-05-20 22:17:56 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:17:56 INFO  Eyes:238 - Point for right inner eye corner set to: 76.0,51.0
+2015-05-20 22:17:56 INFO  Eyes:249 - Point for left outer eye corner set to: 23.0,50.0
+2015-05-20 22:17:56 INFO  Eyes:260 - Point for left inner eye corner set to: 49.0,52.0
+2015-05-20 22:17:56 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:17:56 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:17:56 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:17:56 INFO  Eyebrows:118 - Median Y at: 14
+2015-05-20 22:17:56 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:17:56 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 14.0,15.0 and 42.0,16.0 in eyeROI image!
+2015-05-20 22:17:56 INFO  Eyebrows:118 - Median Y at: 13
+2015-05-20 22:17:56 INFO  Eyebrows:132 - Rejected points: 2 during Y thresholding
+2015-05-20 22:17:56 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 3.0,16.0 and 34.0,17.0 in eyeROI image!
+2015-05-20 22:17:56 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,38.0 and 47.0,39.0 relatively to face image!
+2015-05-20 22:17:56 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 79.0,34.0 and 107.0,35.0 relatively to face image!
+2015-05-20 22:17:56 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:17:56 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:17:56 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:17:56 INFO  Mouth:103 - Points rejected during filtrating: 30
+2015-05-20 22:17:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:56 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:17:56 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:17:56 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:17:55 CEST 2015]; root of context hierarchy
+2015-05-20 22:18:05 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:18:05 CEST 2015]; root of context hierarchy
+2015-05-20 22:18:05 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:18:06 INFO  Face:47 - Loading head image
+2015-05-20 22:18:06 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:18:06 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:18:06 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:18:06 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:18:06 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:18:06 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:18:06 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=40 HEIGHT=40 (x,y)=13,22
+2015-05-20 22:18:06 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:18:06 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=45 HEIGHT=45 (x,y)=65,19
+2015-05-20 22:18:06 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:18:06 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:18:06 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:18:06 INFO  Eyes:227 - Point for right outer eye corner set to: 102.0,49.0
+2015-05-20 22:18:06 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:18:06 INFO  Eyes:238 - Point for right inner eye corner set to: 76.0,51.0
+2015-05-20 22:18:06 INFO  Eyes:249 - Point for left outer eye corner set to: 23.0,50.0
+2015-05-20 22:18:06 INFO  Eyes:260 - Point for left inner eye corner set to: 49.0,52.0
+2015-05-20 22:18:06 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:18:06 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:18:06 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:18:06 INFO  Eyebrows:118 - Median Y at: 14
+2015-05-20 22:18:06 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:18:06 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 14.0,15.0 and 42.0,16.0 in eyeROI image!
+2015-05-20 22:18:06 INFO  Eyebrows:118 - Median Y at: 13
+2015-05-20 22:18:06 INFO  Eyebrows:132 - Rejected points: 2 during Y thresholding
+2015-05-20 22:18:06 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 3.0,16.0 and 34.0,17.0 in eyeROI image!
+2015-05-20 22:18:06 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,38.0 and 47.0,39.0 relatively to face image!
+2015-05-20 22:18:06 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 79.0,34.0 and 107.0,35.0 relatively to face image!
+2015-05-20 22:18:06 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:18:06 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:18:06 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:18:06 INFO  Mouth:103 - Points rejected during filtrating: 21
+2015-05-20 22:18:06 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:06 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:06 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:06 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:06 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:06 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:06 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:18:06 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:18:05 CEST 2015]; root of context hierarchy
+2015-05-20 22:18:27 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:18:27 CEST 2015]; root of context hierarchy
+2015-05-20 22:18:27 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:18:27 INFO  Face:47 - Loading head image
+2015-05-20 22:18:27 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:18:28 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:18:28 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:18:28 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:18:28 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:18:28 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:18:28 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=49 HEIGHT=49 (x,y)=8,19
+2015-05-20 22:18:28 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:18:28 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=54 HEIGHT=54 (x,y)=65,15
+2015-05-20 22:18:28 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:18:28 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:18:28 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:18:28 INFO  Eyes:227 - Point for right outer eye corner set to: 105.0,49.0
+2015-05-20 22:18:28 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:18:28 INFO  Eyes:238 - Point for right inner eye corner set to: 78.0,54.0
+2015-05-20 22:18:28 INFO  Eyes:249 - Point for left outer eye corner set to: 22.0,50.0
+2015-05-20 22:18:28 INFO  Eyes:260 - Point for left inner eye corner set to: 49.0,55.0
+2015-05-20 22:18:28 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:18:28 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:18:28 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:18:28 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:18:28 INFO  Eyebrows:132 - Rejected points: 1 during Y thresholding
+2015-05-20 22:18:28 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 18.0,23.0 and 44.0,18.0 in eyeROI image!
+2015-05-20 22:18:28 INFO  Eyebrows:118 - Median Y at: 18
+2015-05-20 22:18:28 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:18:28 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 5.0,17.0 and 44.0,20.0 in eyeROI image!
+2015-05-20 22:18:28 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 13.0,36.0 and 52.0,39.0 relatively to face image!
+2015-05-20 22:18:28 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 83.0,38.0 and 109.0,33.0 relatively to face image!
+2015-05-20 22:18:28 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:18:28 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:18:28 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:18:28 INFO  Mouth:103 - Points rejected during filtrating: 12
+2015-05-20 22:18:28 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:28 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:28 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:28 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:28 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:28 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:28 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:18:28 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:18:27 CEST 2015]; root of context hierarchy
+2015-05-20 22:18:43 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:18:43 CEST 2015]; root of context hierarchy
+2015-05-20 22:18:43 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:18:44 INFO  Face:47 - Loading head image
+2015-05-20 22:18:44 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:18:44 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:18:44 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:18:44 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:18:44 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:18:44 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:18:44 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=41 HEIGHT=41 (x,y)=22,25
+2015-05-20 22:18:44 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:18:44 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=58 HEIGHT=58 (x,y)=62,11
+2015-05-20 22:18:44 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:18:44 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:18:44 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:18:44 INFO  Eyes:227 - Point for right outer eye corner set to: 104.0,32.0
+2015-05-20 22:18:44 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:18:44 INFO  Eyes:238 - Point for right inner eye corner set to: 75.0,53.0
+2015-05-20 22:18:44 INFO  Eyes:249 - Point for left outer eye corner set to: 30.0,40.0
+2015-05-20 22:18:44 INFO  Eyes:260 - Point for left inner eye corner set to: 53.0,54.0
+2015-05-20 22:18:44 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:18:44 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:18:44 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:18:44 INFO  Eyebrows:118 - Median Y at: 24
+2015-05-20 22:18:44 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:18:44 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 14.0,25.0 and 48.0,24.0 in eyeROI image!
+2015-05-20 22:18:44 INFO  Eyebrows:118 - Median Y at: 14
+2015-05-20 22:18:44 INFO  Eyebrows:132 - Rejected points: 0 during Y thresholding
+2015-05-20 22:18:44 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 7.0,15.0 and 33.0,14.0 in eyeROI image!
+2015-05-20 22:18:44 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 29.0,40.0 and 55.0,39.0 relatively to face image!
+2015-05-20 22:18:44 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 76.0,36.0 and 110.0,35.0 relatively to face image!
+2015-05-20 22:18:44 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:18:44 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:18:44 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:18:44 INFO  Mouth:103 - Points rejected during filtrating: 20
+2015-05-20 22:18:44 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:44 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:44 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:44 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:44 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:44 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:18:44 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:18:44 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:18:43 CEST 2015]; root of context hierarchy
+2015-05-20 22:19:32 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:19:32 CEST 2015]; root of context hierarchy
+2015-05-20 22:19:32 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-20 22:19:32 INFO  Face:47 - Loading head image
+2015-05-20 22:19:32 INFO  Face:61 - Starting Haar cascade for face
+2015-05-20 22:19:33 INFO  Face:74 - We take just first detected face in the image
+2015-05-20 22:19:33 INFO  Face:84 - Resizing face image to 127x127px
+2015-05-20 22:19:33 INFO  Eyes:272 - Starting detecting eyes
+2015-05-20 22:19:33 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-20 22:19:33 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:19:33 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=41 HEIGHT=41 (x,y)=22,25
+2015-05-20 22:19:33 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-20 22:19:33 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=58 HEIGHT=58 (x,y)=62,11
+2015-05-20 22:19:33 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-20 22:19:33 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-20 22:19:33 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-20 22:19:33 INFO  Eyes:227 - Point for right outer eye corner set to: 104.0,32.0
+2015-05-20 22:19:33 INFO  FeatureStore:30 - Creating array for stroing face features points!
+2015-05-20 22:19:33 INFO  Eyes:238 - Point for right inner eye corner set to: 75.0,53.0
+2015-05-20 22:19:33 INFO  Eyes:249 - Point for left outer eye corner set to: 30.0,40.0
+2015-05-20 22:19:33 INFO  Eyes:260 - Point for left inner eye corner set to: 53.0,54.0
+2015-05-20 22:19:33 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-20 22:19:33 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-20 22:19:33 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-20 22:19:33 INFO  Eyebrows:118 - Median Y at: 24
+2015-05-20 22:19:33 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-20 22:19:33 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 14.0,25.0 and 48.0,24.0 in eyeROI image!
+2015-05-20 22:19:33 INFO  Eyebrows:118 - Median Y at: 14
+2015-05-20 22:19:33 INFO  Eyebrows:132 - Rejected points: 0 during Y thresholding
+2015-05-20 22:19:33 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 7.0,15.0 and 33.0,14.0 in eyeROI image!
+2015-05-20 22:19:33 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 29.0,40.0 and 55.0,39.0 relatively to face image!
+2015-05-20 22:19:33 INFO  Eyebrows:217 - Eyebrows' corners for the right eyebrow localized at positions x,y: 76.0,36.0 and 110.0,35.0 relatively to face image!
+2015-05-20 22:19:33 INFO  Mouth:116 - Start mouth detection
+2015-05-20 22:19:33 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-20 22:19:33 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-20 22:19:33 INFO  Mouth:103 - Points rejected during filtrating: 19
+2015-05-20 22:19:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:19:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:19:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:19:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:19:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:19:33 WARN  FeatureStore:50 - Unable to mark feature!
+2015-05-20 22:19:33 INFO  Analyzator:59 - Closing application context
+2015-05-20 22:19:33 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Wed May 20 22:19:32 CEST 2015]; root of context hierarchy

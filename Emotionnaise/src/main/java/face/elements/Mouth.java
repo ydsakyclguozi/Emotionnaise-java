@@ -5,6 +5,9 @@ package face.elements;
 
 import static org.opencv.imgcodecs.Imgcodecs.imwrite;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfPoint;
@@ -57,9 +60,9 @@ public class Mouth implements FaceElement {
 		//Preprocessing of the image
 		Mat mouthAnalyzed = this.mouth.clone();
 		Imgproc.cvtColor(mouthAnalyzed, mouthAnalyzed, Imgproc.COLOR_BGR2GRAY);
-		Imgproc.GaussianBlur(mouthAnalyzed, mouthAnalyzed, new Size(5, 5), 0.9);
+		Imgproc.medianBlur(mouthAnalyzed, mouthAnalyzed, 5);
 		if (Log.isInfoEnabled()) {
-			Log.info("Gaussian blur apply for mouth ROI");
+			Log.info("Median blur apply for mouth ROI");
 		}
 		imwrite("mouthROIblurred.png", mouthAnalyzed);
 		
@@ -67,16 +70,37 @@ public class Mouth implements FaceElement {
 		MatOfPoint features4mouth = new MatOfPoint();
 		Imgproc.goodFeaturesToTrack(mouthAnalyzed, features4mouth, 40, 0.00001,
 				0);
-		for (Point pt : features4mouth.toArray()) {
+		//Rejecting false positives
+		List<Point> points=rejectFalses(features4mouth.toList());
+		//Drawing
+		for (Point pt : points) {
 			FeatureStore.drawCross(mouthAnalyzed, pt, new Scalar(255,255,255));
 		}
 		imwrite("mouthROIblurredMarked"
 				+ ".png", mouthAnalyzed);
-		//Rejecting false positives
-			//TODO: rejecting false positives
 		
 	}
 
+	private List<Point> rejectFalses(List<Point> points){
+		final int xThreshold=(int) (this.mouth.width()/5f);
+		int rejected=0;
+		List<Point> filtredList=new ArrayList<Point>();
+		//Reject points outside face- from 1/5 of the image from both sides
+		for (Point point : points) {
+			if(point.x<=xThreshold || point.x>=(this.face.width()-xThreshold)){
+				rejected++;
+				continue;
+			}else{
+				filtredList.add(point);
+			}
+		}
+		if (Log.isInfoEnabled()) {
+			Log.info("Points rejected during filtrating: "+rejected);
+		}
+		
+		
+		return filtredList;
+	}
 	/*
 	 * (non-Javadoc)
 	 * 

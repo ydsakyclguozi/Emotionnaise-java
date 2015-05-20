@@ -38,12 +38,12 @@ public class Eyes implements FaceElement {
 	private static final String outerCornerTemplate = "src\\main\\resources\\templates\\rightOuter.jpg";
 
 	// Necessary translation due to corner localization on the template
-	private static final int xRightOuter = 9;
-	private static final int yRightOuter = 9;
+	private static final int xRightOuter = 6;
+	private static final int yRightOuter = 6;
 	private static final int xRightInner = 4;
 	private static final int yRightInner = 7;
-	private static final int xLeftOuter = 4;
-	private static final int yLeftOuter = 9;
+	private static final int xLeftOuter = 6;
+	private static final int yLeftOuter = 6;
 	private static final int xLeftInner = 8;
 	private static final int yLeftInner = 7;
 
@@ -146,10 +146,10 @@ public class Eyes implements FaceElement {
 		if (Log.isInfoEnabled()) {
 			Log.info("Grey copies of eyes created!");
 		}
-		Imgproc.GaussianBlur(greyLeftEye, greyLeftEye, new Size(3,3), 0.6);
-		Imgproc.GaussianBlur(greyRightEye, greyRightEye, new Size(3,3), 0.6);
+		Imgproc.medianBlur(greyLeftEye, greyLeftEye, 5);
+		Imgproc.medianBlur(greyRightEye, greyRightEye, 5);
 		if (Log.isInfoEnabled()) {
-			Log.info("Grey copies blurred with Gaussian blur: mask 3x3, 0.6 st.dev.");
+			Log.info("Grey copies blurred with median blur: mask 5x5");
 		}
 
 		// Creating partially cleared images to increase correlation
