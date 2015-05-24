@@ -39,7 +39,7 @@ public class Mouth implements FaceElement {
 
 	private void init() {
 		this.face = faceObj.getFace();
-		// We extarct just part of the face according to mouthRoiFactor
+		// We extract just part of the face according to mouthRoiFactor
 		this.mouth = new Mat(this.face, new Rect(0,
 				(int) (this.face.height() * (1 - mouthRoiFactor)),
 				this.face.width(), (int) (this.face.height() * mouthRoiFactor)));

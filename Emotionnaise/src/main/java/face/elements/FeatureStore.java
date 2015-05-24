@@ -20,16 +20,18 @@ public class FeatureStore {
 			.getName());
 	// Points are stored relatively to array Mat in Face class
 	private static Point[] features;
+	private static Point[] neutralFeatures;
 
-	// Colors definition
+	// Colours definition
 	private static final Scalar green;
 
 	static {
 		green = new Scalar(100, 240, 60);
 		if (Log.isInfoEnabled()) {
-			Log.info("Creating array for stroing face features points!");
+			Log.info("Creating arrays for stroing face features points!");
 		}
 		features = new Point[14];
+		neutralFeatures = new Point[14];
 	}
 
 	private FeatureStore() {
@@ -44,6 +46,29 @@ public class FeatureStore {
 		return features[feature.getValue()];
 	}
 
+
+	/**
+	 * @return the neutralFeatures
+	 */
+	public static Point[] getNeutralFeatures() {
+		return neutralFeatures;
+	}
+
+	/**
+	 * @param neutralFeatures the neutralFeatures to set
+	 */
+	public static void setNeutralFeatures(Point[] neutralFeatures) {
+		FeatureStore.neutralFeatures = neutralFeatures;
+	}
+
+	public static void drawCross(Mat img, Point pt, Scalar color) {
+		Imgproc.line(img, new Point(pt.x, pt.y - 5), new Point(pt.x, pt.y + 5),
+				color, 1);
+
+		Imgproc.line(img, new Point(pt.x - 5, pt.y), new Point(pt.x + 5, pt.y),
+				color, 1);
+	}
+	
 	public static void markFeatures(Face face) {
 		for (Point point : features) {
 			if (point == null) {
@@ -55,12 +80,5 @@ public class FeatureStore {
 		imwrite("markedFeatures.png", face.getFace());
 
 	}
-
-	public static void drawCross(Mat img, Point pt, Scalar color) {
-		Imgproc.line(img, new Point(pt.x, pt.y - 5), new Point(pt.x, pt.y + 5),
-				color, 1);
-
-		Imgproc.line(img, new Point(pt.x - 5, pt.y), new Point(pt.x + 5, pt.y),
-				color, 1);
-	}
+	
 }

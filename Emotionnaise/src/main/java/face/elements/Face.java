@@ -40,7 +40,7 @@ public class Face implements FaceElement {
 	}
 
 	@Autowired
-	public Face(@Value("src\\main\\resources\\head\\4.jpg") String path) {
+	public Face(@Value("src\\main\\resources\\head\\2.jpg") String path) {
 		this.path = path;
 		try {
 			if (Log.isInfoEnabled()) {
