@@ -61,39 +61,13 @@ public class DecisionSystem {
 			float patternY = analyzed.getChangeVector().getY();
 			float realY = changeVectors.get(analyzed.getAnalyzedRelation())
 					.getY();
-			float xRelationship = 0;
-			float yRelationship = 0;
-			if (patternX != 0) {
-				xRelationship = realX / patternX;
-			} else {
-				Log.warn("Pattern X equal 0 for "
-						+ analyzed.getAnalyzedRelation());
-			}
-			if (patternY != 0) {
-				yRelationship = realY / patternY;
-			} else {
-				Log.warn("Pattern Y equal 0 for"
-						+ analyzed.getAnalyzedRelation());
-			}
+			float patternLength=Math.sqrt(patternX*patternX+patternY*patternY);
+			float realLength=Math.sqrt(realX*realX+realY*realY);
+			/*Similarity between vectors is determined on the basis of cosine similarity
+			*likelihood factor is angle*/
+			
 
-			float fullMatching = xRelationship + yRelationship;
-			fullMatching /= DecisionSystem.fullMatchingValue;
-			if (fullMatching > 1) {
-				fullMatching = 1;
-				if (Log.isInfoEnabled()) {
-					Log.info("Value of matching rounded to 1.");
-				}
-			}
-			if (fullMatching < 0) {
-				if (Log.isInfoEnabled()) {
-					Log.info("Value of matching rounded to 0.");
-				}
-			}
-			for (int j = 0; j < analyzed.getWeights().size(); j++) {
-				float weight = analyzed.getWeights().get(Emotions.values()[i]);
-				weight *= fullMatching;
-				analyzed.getWeights().put(Emotions.values()[i], weight);
-			}
+		
 		}
 	}
 
