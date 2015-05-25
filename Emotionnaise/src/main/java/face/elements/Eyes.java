@@ -128,12 +128,12 @@ public class Eyes implements FaceElement {
 		return output;
 	}
 
-	private void templateMatching() {
+	private void templateMatching(boolean neutral) {
 		if (Log.isInfoEnabled()) {
 			Log.info("Loading templates for eye corner matching");
 		}
-		Mat innerTemplate = imread(innerCornerTemplate,CV_LOAD_IMAGE_GRAYSCALE);
-		Mat outerTemplate = imread(outerCornerTemplate,CV_LOAD_IMAGE_GRAYSCALE);
+		Mat innerTemplate = imread(innerCornerTemplate, CV_LOAD_IMAGE_GRAYSCALE);
+		Mat outerTemplate = imread(outerCornerTemplate, CV_LOAD_IMAGE_GRAYSCALE);
 		if (innerTemplate == null || outerTemplate == null) {
 			Log.error("Unable to load templates");
 			return;
@@ -161,60 +161,80 @@ public class Eyes implements FaceElement {
 		for (int i = 0; i < greyRightEye.width() * 0.5; i++) {
 			for (int j = 0; j < greyRightEye.height(); j++) {
 				rightEye4Outer.put(j, i, new byte[] { 0, 0, 0 });
-				rightEye4Inner.put(j, (int) (greyRightEye.width()-3-i),
+				rightEye4Inner.put(j, (int) (greyRightEye.width() - 3 - i),
 						new byte[] { 0, 0, 0 });
 			}
 		}
 		for (int i = 0; i < greyLeftEye.width() * 0.5; i++) {
 			for (int j = 0; j < greyLeftEye.height(); j++) {
 				leftEye4Inner.put(j, i, new byte[] { 0, 0, 0 });
-				leftEye4Outer.put(j, (int) (greyLeftEye.width()-3 -i),
+				leftEye4Outer.put(j, (int) (greyLeftEye.width() - 3 - i),
 						new byte[] { 0, 0, 0 });
 			}
 		}
-		
-		//RIGHT EYE
-		imwrite("rightEye4OuterMatching.png",rightEye4Outer);
-		imwrite("rightEye4InnerMatching.png",rightEye4Inner);
-		
+
+		// RIGHT EYE
+		imwrite("rightEye4OuterMatching.png", rightEye4Outer);
+		imwrite("rightEye4InnerMatching.png", rightEye4Inner);
+
 		Imgproc.matchTemplate(rightEye4Outer, outerTemplate, result,
 				Imgproc.TM_CCOEFF_NORMED);
 		Core.normalize(result, result, 0, 100, Core.NORM_MINMAX);
 		Core.MinMaxLocResult maxVal = Core.minMaxLoc(result);
 		Point outerRightPoint = new Point(maxVal.maxLoc.x, maxVal.maxLoc.y);
-		FeatureStore.setFeaturePoint(FaceFeatures.RightEyeOuterCorner,
-				recalculateRightOuter(outerRightPoint));
-		
+		if (neutral == true) {
+			FeatureStore.setNeutralFeatures(FaceFeatures.RightEyeOuterCorner,
+					recalculateRightOuter(outerRightPoint));
+		} else {
+			FeatureStore.setFeaturePoint(FaceFeatures.RightEyeOuterCorner,
+					recalculateRightOuter(outerRightPoint));
+		}
+
 		Imgproc.matchTemplate(rightEye4Inner, innerTemplate, result,
 				Imgproc.TM_CCOEFF_NORMED);
 		Core.normalize(result, result, 0, 100, Core.NORM_MINMAX);
 		maxVal = Core.minMaxLoc(result);
 		Point innerRightPoint = new Point(maxVal.maxLoc.x, maxVal.maxLoc.y);
-		FeatureStore.setFeaturePoint(FaceFeatures.RightEyeInnerCorner,
-				recalculateRightInner(innerRightPoint));
-		
+		if (neutral == true) {
+			FeatureStore.setNeutralFeatures(FaceFeatures.RightEyeInnerCorner,
+					recalculateRightInner(innerRightPoint));
+		} else {
+			FeatureStore.setFeaturePoint(FaceFeatures.RightEyeInnerCorner,
+					recalculateRightInner(innerRightPoint));
+		}
+
 		Core.flip(innerTemplate, innerTemplate, 1);
 		Core.flip(outerTemplate, outerTemplate, 1);
-		
-		//LEFT EYE
-		imwrite("leftEye4OuterMatching.png",leftEye4Outer);
-		imwrite("leftEye4InnerMatching.png",leftEye4Inner);
-		
+
+		// LEFT EYE
+		imwrite("leftEye4OuterMatching.png", leftEye4Outer);
+		imwrite("leftEye4InnerMatching.png", leftEye4Inner);
+
 		Imgproc.matchTemplate(leftEye4Outer, outerTemplate, result,
 				Imgproc.TM_CCOEFF_NORMED);
 		Core.normalize(result, result, 0, 100, Core.NORM_MINMAX);
 		maxVal = Core.minMaxLoc(result);
 		Point outerLeftPoint = new Point(maxVal.maxLoc.x, maxVal.maxLoc.y);
-		FeatureStore.setFeaturePoint(FaceFeatures.LeftEyeOuterCorner,
-				recalculateLeftOuter(outerLeftPoint));
-		
+		if (neutral == true) {
+			FeatureStore.setNeutralFeatures(FaceFeatures.LeftEyeOuterCorner,
+					recalculateLeftOuter(outerLeftPoint));
+		} else {
+			FeatureStore.setFeaturePoint(FaceFeatures.LeftEyeOuterCorner,
+					recalculateLeftOuter(outerLeftPoint));
+		}
+
 		Imgproc.matchTemplate(leftEye4Inner, innerTemplate, result,
 				Imgproc.TM_CCOEFF_NORMED);
 		Core.normalize(result, result, 0, 100, Core.NORM_MINMAX);
 		maxVal = Core.minMaxLoc(result);
 		Point innerLeftPoint = new Point(maxVal.maxLoc.x, maxVal.maxLoc.y);
+		if (neutral == true) {
+			FeatureStore.setNeutralFeatures(FaceFeatures.LeftEyeInnerCorner,
+					recalculateLeftInner(innerLeftPoint));	
+		}else{
 		FeatureStore.setFeaturePoint(FaceFeatures.LeftEyeInnerCorner,
 				recalculateLeftInner(innerLeftPoint));
+		}
 
 	}
 
@@ -222,42 +242,46 @@ public class Eyes implements FaceElement {
 		pt.x += xRightOuter;
 		pt.x += this.rightEyeRect.x;
 		pt.y += yRightOuter;
-		pt.y+=this.rightEyeRect.y;
-		if(Log.isInfoEnabled()){
-			Log.info("Point for right outer eye corner set to: "+pt.x+","+pt.y);
+		pt.y += this.rightEyeRect.y;
+		if (Log.isInfoEnabled()) {
+			Log.info("Point for right outer eye corner set to: " + pt.x + ","
+					+ pt.y);
 		}
 		return pt;
 	}
 
 	private Point recalculateRightInner(Point pt) {
 		pt.x += xRightInner;
-		pt.x+=this.rightEyeRect.x;
+		pt.x += this.rightEyeRect.x;
 		pt.y += yRightInner;
-		pt.y+=this.rightEyeRect.y;
-		if(Log.isInfoEnabled()){
-			Log.info("Point for right inner eye corner set to: "+pt.x+","+pt.y);
+		pt.y += this.rightEyeRect.y;
+		if (Log.isInfoEnabled()) {
+			Log.info("Point for right inner eye corner set to: " + pt.x + ","
+					+ pt.y);
 		}
 		return pt;
 	}
-	
+
 	private Point recalculateLeftOuter(Point pt) {
 		pt.x += xLeftOuter;
 		pt.x += this.leftEyeRect.x;
 		pt.y += yLeftOuter;
-		pt.y+=this.leftEyeRect.y;
-		if(Log.isInfoEnabled()){
-			Log.info("Point for left outer eye corner set to: "+pt.x+","+pt.y);
+		pt.y += this.leftEyeRect.y;
+		if (Log.isInfoEnabled()) {
+			Log.info("Point for left outer eye corner set to: " + pt.x + ","
+					+ pt.y);
 		}
 		return pt;
 	}
 
 	private Point recalculateLeftInner(Point pt) {
 		pt.x += xLeftInner;
-		pt.x+=this.leftEyeRect.x;
+		pt.x += this.leftEyeRect.x;
 		pt.y += yLeftInner;
-		pt.y+=this.leftEyeRect.y;
-		if(Log.isInfoEnabled()){
-			Log.info("Point for left inner eye corner set to: "+pt.x+","+pt.y);
+		pt.y += this.leftEyeRect.y;
+		if (Log.isInfoEnabled()) {
+			Log.info("Point for left inner eye corner set to: " + pt.x + ","
+					+ pt.y);
 		}
 		return pt;
 	}
@@ -267,7 +291,7 @@ public class Eyes implements FaceElement {
 	 * 
 	 * @see face.elements.FaceElement#detectElement()
 	 */
-	public Mat detectElement() {
+	public Mat detectElement(boolean neutral) {
 		if (Log.isInfoEnabled()) {
 			Log.info("Starting detecting eyes");
 		}
@@ -277,7 +301,7 @@ public class Eyes implements FaceElement {
 		}
 
 		this.haarCascade4Eyes(xmlCascade);
-		this.templateMatching();
+		this.templateMatching(neutral);
 		// We don't return, images are stored in the class
 		return null;
 	}

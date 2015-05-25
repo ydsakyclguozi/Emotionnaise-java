@@ -170,7 +170,7 @@ public class Eyebrows implements FaceElement {
 	 * 
 	 * @see face.elements.FaceElement#detectElement()
 	 */
-	public Mat detectElement() {
+	public Mat detectElement(boolean neutral) {
 		if (Log.isInfoEnabled()) {
 			Log.info("Starting detecting eyebrows");
 		}
@@ -199,9 +199,18 @@ public class Eyebrows implements FaceElement {
 					+ pt2.y
 					+ " relatively to face image!");
 		}
-		FeatureStore.setFeaturePoint(FaceFeatures.LeftEyebrowOuterCorner, pt1);
-		FeatureStore.setFeaturePoint(FaceFeatures.LeftEyebrowInnerCorner, pt2);
-		
+		if (neutral == true) {
+			FeatureStore.setNeutralFeatures(
+					FaceFeatures.LeftEyebrowOuterCorner, pt1);
+			FeatureStore.setNeutralFeatures(
+					FaceFeatures.LeftEyebrowInnerCorner, pt2);
+		} else {
+			FeatureStore.setFeaturePoint(FaceFeatures.LeftEyebrowOuterCorner,
+					pt1);
+			FeatureStore.setFeaturePoint(FaceFeatures.LeftEyebrowInnerCorner,
+					pt2);
+		}
+
 		// Right EYE
 		if (classyfiedPoints4Right.size() != 2) {
 			Log.error("Inappropriate value of eye corners!");
@@ -224,8 +233,17 @@ public class Eyebrows implements FaceElement {
 					+ pt4.y
 					+ " relatively to face image!");
 		}
-		FeatureStore.setFeaturePoint(FaceFeatures.RightEyebrowInnerCorner, pt3);
-		FeatureStore.setFeaturePoint(FaceFeatures.RightEyebrowOuterCorner, pt4);
+		if (neutral == true) {
+			FeatureStore.setNeutralFeatures(FaceFeatures.RightEyebrowInnerCorner,
+					pt3);
+			FeatureStore.setNeutralFeatures(FaceFeatures.RightEyebrowOuterCorner,
+					pt4);
+		} else {
+			FeatureStore.setFeaturePoint(FaceFeatures.RightEyebrowInnerCorner,
+					pt3);
+			FeatureStore.setFeaturePoint(FaceFeatures.RightEyebrowOuterCorner,
+					pt4);
+		}
 
 		return null;
 	}

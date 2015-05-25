@@ -47,10 +47,16 @@ public class Analyzator {
 		FaceElement eyebrows=(FaceElement) ctx.getBean("eyebrows");
 		FaceElement mouth=(FaceElement) ctx.getBean("mouth");
 			//Execute detection algorithms
-		face.detectElement();
-		eyes.detectElement();
-		eyebrows.detectElement();
-		mouth.detectElement();
+				//For neutral face
+		face.detectElement(true);
+		eyes.detectElement(true);
+		eyebrows.detectElement(true);
+		mouth.detectElement(true);
+				//For expressing face
+		face.detectElement(false);
+		eyes.detectElement(false);
+		eyebrows.detectElement(false);
+		mouth.detectElement(false);
 			//Mark features
 		FeatureStore.markFeatures((Face) face);
 			//Decision making system

@@ -57,8 +57,8 @@ public class FeatureStore {
 	/**
 	 * @param neutralFeatures the neutralFeatures to set
 	 */
-	public static void setNeutralFeatures(Point[] neutralFeatures) {
-		FeatureStore.neutralFeatures = neutralFeatures;
+	public static void setNeutralFeatures(FaceFeatures feature, Point pt) {
+		neutralFeatures[feature.getValue()] = pt;
 	}
 
 	public static void drawCross(Mat img, Point pt, Scalar color) {

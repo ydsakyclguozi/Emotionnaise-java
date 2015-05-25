@@ -106,7 +106,7 @@ public class Mouth implements FaceElement {
 	 * 
 	 * @see face.elements.FaceElement#detectElement()
 	 */
-	public Mat detectElement() {
+	public Mat detectElement(boolean neutral) {
 		if (Log.isInfoEnabled()) {
 			Log.info("Start mouth detection");
 		}

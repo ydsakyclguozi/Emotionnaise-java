@@ -33,30 +33,44 @@ public class Face implements FaceElement {
 	private static final String xmlCascade = "E:\\Studia\\OpenCV\\opencv\\sources\\data\\haarcascades\\haarcascade_frontalface_alt2.xml";
 
 	private String path;
+	private String path4expressinFace;
 	private Mat head;
-	private Mat face;
+	private Mat headExpressing;
+	private Mat neutralFace;
+	private Mat expressingFace;
 
 	public Face() {
 	}
 
 	@Autowired
-	public Face(@Value("src\\main\\resources\\head\\2.jpg") String path) {
-		this.path = path;
+	public Face(
+			@Value("src\\main\\resources\\head\\2.jpg") String neutralFacePath,
+			@Value("src\\main\\resources\\head\\2.jpg") String expressingFacePath) {
+		this.path = neutralFacePath;
+		this.path4expressinFace = expressingFacePath;
 		try {
 			if (Log.isInfoEnabled()) {
 				Log.info("Loading head image");
 			}
 			head = imread(this.path, CV_LOAD_IMAGE_COLOR);
+			headExpressing = imread(this.path4expressinFace,
+					CV_LOAD_IMAGE_COLOR);
 		} catch (Exception e) {
 			Log.error("Error occured during loading head image", e);
 		}
 	}
 
-	public Mat detectElement() {
-		return haarCascade4Face(xmlCascade);
+	public Mat detectElement(boolean neutral) {
+		this.neutralFace = haarCascade4Face(xmlCascade, true);
+		this.expressingFace = haarCascade4Face(xmlCascade, false);
+		return null;
 	}
 
-	private Mat haarCascade4Face(String haarxml) {
+	private Mat haarCascade4Face(String haarxml, boolean neutral) {
+
+		// We use or neutral head or head expressing emotions
+		Mat head = neutral ? this.head : this.headExpressing;
+
 		if (Log.isInfoEnabled()) {
 			Log.info("Starting Haar cascade for face");
 		}
@@ -77,15 +91,15 @@ public class Face implements FaceElement {
 			Log.error("Unable to detect face in the image");
 			return null;
 		}
-		this.face = new Mat(this.head, faces.toArray()[0]);
+		Mat face = new Mat(head, faces.toArray()[0]);
 
 		// Algorithms adjust for face 127x127px
 		if (Log.isInfoEnabled()) {
 			Log.info("Resizing face image to 127x127px");
 		}
-		Imgproc.resize(this.face, this.face, new Size(127, 127));
-		imwrite("detected&ResizedFace.png", this.face);
-		return this.face;
+		Imgproc.resize(face, face, new Size(127, 127));
+		imwrite("detected&ResizedFace.png", face);
+		return face;
 	}
 
 	/**
@@ -123,7 +137,7 @@ public class Face implements FaceElement {
 	 * @return the face
 	 */
 	public Mat getFace() {
-		return face;
+		return neutralFace;
 	}
 
 	/**
@@ -131,7 +145,7 @@ public class Face implements FaceElement {
 	 *            the face to set
 	 */
 	public void setFace(Mat face) {
-		this.face = face;
+		this.neutralFace = face;
 	}
 
 	public static int medianY(List<Point> points) {

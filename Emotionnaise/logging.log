@@ -43,3 +43,210 @@
 2015-05-25 18:45:42 ERROR DecisionSystem:43 - Unable to make a decision either patterns were not fixed orimage analysis was not performed
 2015-05-25 18:45:42 INFO  Analyzator:63 - Closing application context
 2015-05-25 18:45:42 INFO  ClassPathXmlApplicationContext:862 - Closing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Mon May 25 18:45:41 CEST 2015]; root of context hierarchy
+2015-05-25 19:40:21 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Mon May 25 19:40:21 CEST 2015]; root of context hierarchy
+2015-05-25 19:40:21 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-25 19:40:21 WARN  ClassPathXmlApplicationContext:487 - Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eyebrows': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Eyes face.elements.Eyebrows.eyes; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eyes': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Face face.elements.Eyes.faceObj; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at face.main.Analyzator.main(Analyzator.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Eyes face.elements.Eyebrows.eyes; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eyes': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Face face.elements.Eyes.faceObj; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eyes': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Face face.elements.Eyes.faceObj; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 15 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Face face.elements.Eyes.faceObj; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 26 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 28 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1301)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1047)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 41 more
+2015-05-25 19:40:21 ERROR Analyzator:38 - Error during loading application context
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eyebrows': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Eyes face.elements.Eyebrows.eyes; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eyes': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Face face.elements.Eyes.faceObj; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:755)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at face.main.Analyzator.main(Analyzator.java:35)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Eyes face.elements.Eyebrows.eyes; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eyes': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Face face.elements.Eyes.faceObj; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'eyes': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Face face.elements.Eyes.faceObj; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 15 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private face.elements.Face face.elements.Eyes.faceObj; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 26 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'face' defined in file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\face\elements\Face.class]: Unsatisfied dependency expressed through constructor argument with index 0 of type [java.lang.String]: : No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1139)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 28 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.lang.String] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1301)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1047)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 41 more
+2015-05-25 19:41:26 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4f8e5cde: startup date [Mon May 25 19:41:26 CEST 2015]; root of context hierarchy
+2015-05-25 19:41:27 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [E:\Studia\II YEAR\Team Project\springAproachRepo\Emotionnaise\target\classes\META-INF\application-context.xml]
+2015-05-25 19:41:27 INFO  Face:53 - Loading head image
+2015-05-25 19:41:27 INFO  Face:75 - Starting Haar cascade for face
+2015-05-25 19:41:27 INFO  Face:88 - We take just first detected face in the image
+2015-05-25 19:41:27 INFO  Face:98 - Resizing face image to 127x127px
+2015-05-25 19:41:27 INFO  Face:75 - Starting Haar cascade for face
+2015-05-25 19:41:27 INFO  Face:88 - We take just first detected face in the image
+2015-05-25 19:41:27 INFO  Face:98 - Resizing face image to 127x127px
+2015-05-25 19:41:27 INFO  Eyes:296 - Starting detecting eyes
+2015-05-25 19:41:27 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-25 19:41:27 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-25 19:41:27 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=40 HEIGHT=40 (x,y)=13,22
+2015-05-25 19:41:27 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-25 19:41:27 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=45 HEIGHT=45 (x,y)=65,19
+2015-05-25 19:41:27 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-25 19:41:27 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-25 19:41:27 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-25 19:41:27 INFO  Eyes:247 - Point for right outer eye corner set to: 102.0,49.0
+2015-05-25 19:41:27 INFO  FeatureStore:31 - Creating arrays for stroing face features points!
+2015-05-25 19:41:27 INFO  Eyes:259 - Point for right inner eye corner set to: 76.0,51.0
+2015-05-25 19:41:27 INFO  Eyes:271 - Point for left outer eye corner set to: 23.0,50.0
+2015-05-25 19:41:27 INFO  Eyes:283 - Point for left inner eye corner set to: 49.0,52.0
+2015-05-25 19:41:27 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-25 19:41:27 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-25 19:41:27 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-25 19:41:27 INFO  Eyebrows:118 - Median Y at: 14
+2015-05-25 19:41:27 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-25 19:41:27 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 14.0,15.0 and 42.0,16.0 in eyeROI image!
+2015-05-25 19:41:27 INFO  Eyebrows:118 - Median Y at: 13
+2015-05-25 19:41:27 INFO  Eyebrows:132 - Rejected points: 2 during Y thresholding
+2015-05-25 19:41:27 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 3.0,16.0 and 34.0,17.0 in eyeROI image!
+2015-05-25 19:41:27 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,38.0 and 47.0,39.0 relatively to face image!
+2015-05-25 19:41:27 INFO  Eyebrows:226 - Eyebrows' corners for the right eyebrow localized at positions x,y: 79.0,34.0 and 107.0,35.0 relatively to face image!
+2015-05-25 19:41:27 INFO  Mouth:111 - Start mouth detection
+2015-05-25 19:41:27 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-25 19:41:27 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-25 19:41:27 INFO  Mouth:98 - Points rejected during filtrating: 20
+2015-05-25 19:41:27 INFO  Face:75 - Starting Haar cascade for face
+2015-05-25 19:41:27 INFO  Face:88 - We take just first detected face in the image
+2015-05-25 19:41:27 INFO  Face:98 - Resizing face image to 127x127px
+2015-05-25 19:41:27 INFO  Face:75 - Starting Haar cascade for face
+2015-05-25 19:41:28 INFO  Face:88 - We take just first detected face in the image
+2015-05-25 19:41:28 INFO  Face:98 - Resizing face image to 127x127px
+2015-05-25 19:41:28 INFO  Eyes:296 - Starting detecting eyes
+2015-05-25 19:41:28 INFO  Eyes:63 - Starting Haar cascade for eyes
+2015-05-25 19:41:28 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-25 19:41:28 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=40 HEIGHT=40 (x,y)=13,22
+2015-05-25 19:41:28 INFO  Eyes:104 - Recalculating rectangle for an eye
+2015-05-25 19:41:28 INFO  Eyes:124 - Rectangle for an eye recalculated: WIDTH=45 HEIGHT=45 (x,y)=65,19
+2015-05-25 19:41:28 INFO  Eyes:133 - Loading templates for eye corner matching
+2015-05-25 19:41:28 INFO  Eyes:147 - Grey copies of eyes created!
+2015-05-25 19:41:28 INFO  Eyes:152 - Grey copies blurred with median blur: mask 5x5
+2015-05-25 19:41:28 INFO  Eyes:247 - Point for right outer eye corner set to: 102.0,49.0
+2015-05-25 19:41:28 INFO  Eyes:259 - Point for right inner eye corner set to: 76.0,51.0
+2015-05-25 19:41:28 INFO  Eyes:271 - Point for left outer eye corner set to: 23.0,50.0
+2015-05-25 19:41:28 INFO  Eyes:283 - Point for left inner eye corner set to: 49.0,52.0
+2015-05-25 19:41:28 INFO  Eyebrows:175 - Starting detecting eyebrows
+2015-05-25 19:41:28 INFO  Eyebrows:47 - Start preparing image for Haaris corner detection.
+2015-05-25 19:41:28 INFO  Eyebrows:90 - Rejecting false positives for Haaris corner detector
+2015-05-25 19:41:28 INFO  Eyebrows:118 - Median Y at: 14
+2015-05-25 19:41:28 INFO  Eyebrows:132 - Rejected points: 3 during Y thresholding
+2015-05-25 19:41:28 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 14.0,15.0 and 42.0,16.0 in eyeROI image!
+2015-05-25 19:41:28 INFO  Eyebrows:118 - Median Y at: 13
+2015-05-25 19:41:28 INFO  Eyebrows:132 - Rejected points: 2 during Y thresholding
+2015-05-25 19:41:28 INFO  Eyebrows:161 - Eyebrows' corners localized at positions x,y: 3.0,16.0 and 34.0,17.0 in eyeROI image!
+2015-05-25 19:41:28 INFO  Eyebrows:192 - Eyebrows' corners for the left eyebrow localized at positions x,y: 16.0,38.0 and 47.0,39.0 relatively to face image!
+2015-05-25 19:41:28 INFO  Eyebrows:226 - Eyebrows' corners for the right eyebrow localized at positions x,y: 79.0,34.0 and 107.0,35.0 relatively to face image!
+2015-05-25 19:41:28 INFO  Mouth:111 - Start mouth detection
+2015-05-25 19:41:28 INFO  Mouth:47 - Clone of mouth region ROI created
+2015-05-25 19:41:28 INFO  Mouth:65 - Median blur apply for mouth ROI
+2015-05-25 19:41:28 INFO  Mouth:98 - Points rejected during filtrating: 20
+2015-05-25 19:41:28 WARN  FeatureStore:75 - Unable to mark feature!
+2015-05-25 19:41:28 WARN  FeatureStore:75 - Unable to mark feature!
+2015-05-25 19:41:28 WARN  FeatureStore:75 - Unable to mark feature!
+2015-05-25 19:41:28 WARN  FeatureStore:75 - Unable to mark feature!
+2015-05-25 19:41:28 WARN  FeatureStore:75 - Unable to mark feature!
+2015-05-25 19:41:28 WARN  FeatureStore:75 - Unable to mark feature!
+2015-05-25 19:41:28 INFO  DecisionSystem:24 - Decision system created.
