@@ -3,7 +3,10 @@ package face.decision;
 public enum EmotionVectors {
 	LeftEyebrow,
 	RightEyebrow,
-	LeftEye,
-	RightEye,
-	Mouth;
+	LeftEyeLeft,
+	LeftEyeRight,
+	RightEyeLeft,
+	RightEyeRight,
+	LeftMouth,
+	RightMouth;
 }

@@ -53,7 +53,7 @@ public class Analyzator {
 		mouth.detectElement();
 			//Mark features
 		FeatureStore.markFeatures((Face) face);
-			//Decion making system
+			//Decision making system
 		DecisionSystem ds=new DecisionSystem();
 		ds.makeDecision();
 		//Operational block END
