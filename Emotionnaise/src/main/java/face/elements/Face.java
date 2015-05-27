@@ -44,7 +44,7 @@ public class Face implements FaceElement {
 
 	@Autowired
 	public Face(
-			@Value("src\\main\\resources\\head\\2.jpg") String neutralFacePath,
+			@Value("src\\main\\resources\\head\\1.jpg") String neutralFacePath,
 			@Value("src\\main\\resources\\head\\2.jpg") String expressingFacePath) {
 		this.path = neutralFacePath;
 		this.path4expressinFace = expressingFacePath;
@@ -146,6 +146,63 @@ public class Face implements FaceElement {
 	 */
 	public void setFace(Mat face) {
 		this.neutralFace = face;
+	}
+	
+
+	/**
+	 * @return the path4expressinFace
+	 */
+	public String getPath4expressinFace() {
+		return path4expressinFace;
+	}
+
+	/**
+	 * @param path4expressinFace the path4expressinFace to set
+	 */
+	public void setPath4expressinFace(String path4expressinFace) {
+		this.path4expressinFace = path4expressinFace;
+	}
+
+	/**
+	 * @return the headExpressing
+	 */
+	public Mat getHeadExpressing() {
+		return headExpressing;
+	}
+
+	/**
+	 * @param headExpressing the headExpressing to set
+	 */
+	public void setHeadExpressing(Mat headExpressing) {
+		this.headExpressing = headExpressing;
+	}
+
+	/**
+	 * @return the neutralFace
+	 */
+	public Mat getNeutralFace() {
+		return neutralFace;
+	}
+
+	/**
+	 * @param neutralFace the neutralFace to set
+	 */
+	public void setNeutralFace(Mat neutralFace) {
+		this.neutralFace = neutralFace;
+	}
+
+	/**
+	 * @return the expressingFace
+	 */
+	public Mat getExpressingFace() {
+		return expressingFace;
+	}
+
+	/**
+	 * @param expressingFace the expressingFace to set
+	 */
+	public void setExpressingFace(Mat expressingFace) {
+		this.expressingFace = expressingFace;
 	}
 
 	public static int medianY(List<Point> points) {

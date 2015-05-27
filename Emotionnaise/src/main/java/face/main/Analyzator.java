@@ -9,7 +9,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import face.decision.DecisionSystem;
+import face.decisionD.DecisionSystem;
 import face.elements.Face;
 import face.elements.FaceElement;
 import face.elements.FeatureStore;
@@ -61,7 +61,7 @@ public class Analyzator {
 		FeatureStore.markFeatures((Face) face);
 			//Decision making system
 		DecisionSystem ds=new DecisionSystem();
-		ds.makeDecision();
+//		ds.makeDecision();
 		//Operational block END
 		
 		if (ctx != null) {
