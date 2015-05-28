@@ -48,11 +48,15 @@ public class RelationsDeterminant {
 		double cosAngle = dotProduct / (vectorLeftLength * vectorRightLength);
 		double result = Math.acos(cosAngle);
 		if (Log.isInfoEnabled()) {
-			Log.info("Angle calculated for mouth relations = " + result
+			Log.info("Angle calculated for mouth relation = " + result
 					+ " rad");
 		}
 		relations.setValue(EmotionRelations.AngleMouth, result);
 		return result;
+	}
+	
+	private double calculateEyeAngle(boolean rightEye){
+		
 	}
 
 	/**
