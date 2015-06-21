@@ -1,0 +1,197 @@
+package emotion.grid;
+
+import java.util.ArrayList;
+import java.util.EnumMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.log4j.Logger;
+import org.opencv.core.Mat;
+import org.opencv.core.Point;
+import org.opencv.core.Scalar;
+import org.opencv.imgcodecs.Imgcodecs;
+import org.opencv.imgproc.Imgproc;
+
+/**
+ * Class contains complete localisation of all
+ * <code>GridKnot<code>'s used in the pattern. It
+ * provides method managing relocation of the knots to fit the grid the best.
+ * This class takes a architecture of the singleton. Grid has to be placed in
+ * the correct place- it is determined on the basis of the pupils localisation.
+ * 
+ * @author James
+ *
+ */
+public class Grid {
+
+	private static final Logger Log = Logger.getLogger(Grid.class.getName());
+
+	/**
+	 * Field contains all knots
+	 */
+	private Map<KnotType, GridKnot> knots;
+
+	private static Grid grid;
+
+	protected Grid() {
+		if (Log.isDebugEnabled()) {
+			Log.debug("Singleton constructor used");
+		}
+		knots = new EnumMap<KnotType, GridKnot>(KnotType.class);
+		for (KnotType type : KnotType.values()) {
+			knots.put(type, new GridKnot(this,type));
+		}
+	}
+
+	public static Grid getInstance() {
+		if (Grid.grid == null) {
+			Grid.grid = new Grid();
+		}
+		if (Log.isDebugEnabled()) {
+			Log.debug("Instance of the singleton taken");
+		}
+		return grid;
+	}
+
+	/**
+	 * @return the knots
+	 */
+	public Map<KnotType, GridKnot> getKnots() {
+		return knots;
+	}
+
+	/**
+	 * Method fit size and initial position of the pattern grid in terms of
+	 * examined image.
+	 * 
+	 * @param leftPupil
+	 *            position of the left pupil
+	 * @param rightPupil
+	 *            position of the right pupil
+	 */
+	public void placeGrid(Point leftPupil, Point rightPupil) {
+		GridKnot leftPupilKnot = this.knots.get(KnotType.LeftPupil);
+		GridKnot rightPupilKnot = this.knots.get(KnotType.RightPupil);
+
+		double patternDistanceX = leftPupilKnot.getX() - rightPupilKnot.getX();
+		double currentDistanceX = leftPupil.x - rightPupil.x;
+		if(patternDistanceX==0 || currentDistanceX==0){
+			Log.error("Inappropriate distance between pupils");
+			return;
+		}
+		final double factor = currentDistanceX / patternDistanceX;
+
+		if (Log.isDebugEnabled()) {
+			Log.debug("Recalculating grid relations to processed image");
+		}
+		recalculateDistances(factor);
+		leftPupilKnot.setPatternX(leftPupil.x);
+		leftPupilKnot.setPatternY(leftPupil.y);
+		leftPupilKnot.setX(leftPupil.x);
+		leftPupilKnot.setY(leftPupil.y);
+
+		rightPupilKnot.setPatternX(rightPupil.x);
+		rightPupilKnot.setPatternY(rightPupil.y);
+		rightPupilKnot.setX(rightPupil.x);
+		rightPupilKnot.setY(rightPupil.y);
+
+	}
+
+	/**
+	 * Method recalculates distances among knots relatively to rate of pattern
+	 * distance between pupils and current distance between them
+	 * 
+	 * @param factor
+	 *            how many times increase/decrease distances among knots in the
+	 *            grid
+	 */
+	private void recalculateDistances(double factor) {
+		if (Log.isInfoEnabled()) {
+			Log.info("Recalculating of knots relations with rate: " + factor);
+		}
+		KnotType types[]=KnotType.values();
+		//Map has the same size as a number of entries in enum KnotType
+		for (int i = 0; i < types.length; i++) {
+			GridKnot knot1 = this.knots.get(types[i]);
+			for (int j = 0; j < knot1.getNeighbours().size(); j++) {
+				GridKnot knot2 = knots.get(knot1.getNeighbours().get(j));
+				// Recalculation of X
+				double distance = knot1.getX() - knot2.getX();
+				distance = ((distance * factor) - distance);
+				distance /= 2;
+				knot1.setX(knot1.getX() + distance);
+				knot2.setX(knot2.getX() - distance);
+				knot1.setPatternX(knot1.getPatternX()+distance);
+				knot2.setPatternX(knot2.getPatternX()-distance);
+				// Recalculation of Y
+				distance = knot1.getY() - knot2.getY();
+				distance = ((distance * factor) - distance);
+				distance /= 2;
+				knot1.setY(knot1.getY() + distance);
+				knot2.setY(knot2.getY() - distance);
+				knot1.setPatternY(knot1.getPatternY()+distance);
+				knot2.setPatternY(knot2.getPatternY()-distance);
+			}
+		}
+	}
+
+	public Grid setKnot(GridKnot knot) {
+		this.knots.put(knot.getType(), knot);
+		if (Log.isDebugEnabled()) {
+			Log.debug("Knot of type: " + knot.getType().name()
+					+ " was added to the grid");
+		}
+		return this;
+	}
+
+	/**
+	 * Method marks whole grid on the clone of the image
+	 */
+	public void markGrid(Mat _image) {
+		Mat image = _image.clone();
+		for (KnotType type : KnotType.values()) {
+			GridKnot knot = this.knots.get(type);
+			if (knot == null) {
+				Log.warn("Unable to get " + type.name() + " from a map");
+				continue;
+			}
+			double x = knot.getX();
+			double y = knot.getY();
+			double halfSide=knot.getArea()/2;
+			Imgproc.rectangle(image, new Point(x-halfSide, y-halfSide),
+					new Point(x + halfSide, y + halfSide),
+					new Scalar(0, 0, 0));
+		}
+		final String name = "markedGrid.jpg";
+		Imgcodecs.imwrite(name, image);
+		if (Log.isInfoEnabled()) {
+			Log.info("Marked grid has been saved under the name: " + name);
+		}
+	}
+	
+	/**
+	 * Method marks whole grid of pattern coordinates on the clone of the image
+	 */
+	public void markPatternGrid(Mat _image) {
+		Mat image = _image.clone();
+		for (KnotType type : KnotType.values()) {
+			GridKnot knot = this.knots.get(type);
+			if (knot == null) {
+				Log.warn("Unable to get " + type.name() + " from a map");
+				continue;
+			}
+			double x = knot.getPatternX();
+			double y = knot.getPatternY();
+			double halfSide=knot.getArea()/2;
+			Imgproc.rectangle(image, new Point(x-halfSide, y-halfSide),
+					new Point(x + halfSide, y + halfSide),
+					new Scalar(0, 0, 0));
+		}
+		final String name = "markedGrid.jpg";
+		Imgcodecs.imwrite(name, image);
+		if (Log.isInfoEnabled()) {
+			Log.info("Marked grid has been saved under the name: " + name);
+		}
+	}
+
+}

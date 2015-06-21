@@ -1,0 +1,638 @@
+2015-06-20 17:15:38 DEBUG Grid:31 - Singleton constructor used
+2015-06-20 17:15:38 DEBUG Grid:41 - Instance of the singleton taken
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 1.0,1.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 2.0,2.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 3.0,3.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 4.0,4.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 5.0,5.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 6.0,6.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 7.0,7.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 8.0,8.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 9.0,9.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 10.0,10.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 11.0,11.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 12.0,12.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 13.0,13.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 14.0,14.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 15.0,15.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 16.0,16.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 17.0,17.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 18.0,18.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 19.0,19.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 20.0,20.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 21.0,21.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 22.0,22.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 23.0,23.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 24.0,24.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 25.0,25.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 26.0,26.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 27.0,27.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 28.0,28.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 29.0,29.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 30.0,30.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 31.0,31.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 32.0,32.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 33.0,33.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 34.0,34.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 35.0,35.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 36.0,36.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 37.0,37.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 38.0,38.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 39.0,39.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 40.0,40.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 41.0,41.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 42.0,42.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 43.0,43.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 44.0,44.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 45.0,45.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 46.0,46.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 47.0,47.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 48.0,48.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 49.0,49.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 50.0,50.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 51.0,51.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 52.0,52.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 53.0,53.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 54.0,54.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 55.0,55.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 56.0,56.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 57.0,57.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 58.0,58.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 59.0,59.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 60.0,60.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 61.0,61.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 62.0,62.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 63.0,63.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 64.0,64.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 65.0,65.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 66.0,66.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 67.0,67.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 68.0,68.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 69.0,69.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 70.0,70.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 71.0,71.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 72.0,72.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 73.0,73.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 74.0,74.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 75.0,75.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 76.0,76.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 77.0,77.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 78.0,78.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 79.0,79.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 80.0,80.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 81.0,81.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 82.0,82.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 83.0,83.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 84.0,84.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 85.0,85.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 86.0,86.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 87.0,87.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 88.0,88.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 89.0,89.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 90.0,90.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 91.0,91.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 92.0,92.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 93.0,93.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 94.0,94.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 95.0,95.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 96.0,96.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 97.0,97.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 98.0,98.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-20 17:15:38 DEBUG GridKnot:84 - Knot was created with position (x,y): 99.0,99.0; type: LeftInnerEye
+2015-06-20 17:15:38 DEBUG Grid:100 - Knot of type: LeftInnerEye was added to the grid
+2015-06-21 16:58:16 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 16:58:16 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 16:58:44 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 16:58:44 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 16:59:26 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 16:59:26 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 16:59:49 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 16:59:49 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 17:00:37 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:00:37 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 17:27:23 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:27:23 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 17:27:29 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:27:29 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 17:28:58 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:28:58 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 17:29:53 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:29:53 DEBUG Grid:47 - Instance of the singleton taken
+2015-06-21 17:29:53 DEBUG GridKnot:87 - Empty knot was created
+2015-06-21 17:29:53 DEBUG GridKnot:87 - Empty knot was created
+2015-06-21 17:29:53 DEBUG Grid:79 - Recalculating grid relations to processed image
+2015-06-21 17:29:53 INFO  Grid:108 - Recalculationg of knots relations with rate: -Infinity
+2015-06-21 17:33:47 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:33:47 DEBUG GridKnot:97 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:36:18 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:36:30 DEBUG GridKnot:97 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:36:57 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:37:16 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:37:19 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:37:46 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:38:17 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:40:37 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:40:37 DEBUG GridKnot:96 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:41:29 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:41:38 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:41:50 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:42:04 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 17:42:04 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 17:42:05 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 17:42:06 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 17:42:08 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 17:42:11 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 17:42:12 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 17:42:13 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 17:42:14 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 17:42:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 17:42:16 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 17:42:17 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 17:42:18 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 17:42:24 DEBUG Grid:50 - Instance of the singleton taken
+2015-06-21 17:42:35 DEBUG GridKnot:86 - Empty knot was created
+2015-06-21 17:42:35 DEBUG GridKnot:86 - Empty knot was created
+2015-06-21 17:42:35 DEBUG Grid:82 - Recalculating grid relations to processed image
+2015-06-21 17:42:35 INFO  Grid:111 - Recalculating of knots relations with rate: -Infinity
+2015-06-21 17:43:21 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:43:36 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:43:38 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:43:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 17:43:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 17:43:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 17:43:40 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 17:43:40 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 17:43:41 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 17:43:41 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 17:43:41 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 17:43:42 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 17:43:42 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 17:43:43 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 17:43:43 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 17:43:44 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 17:43:46 DEBUG Grid:50 - Instance of the singleton taken
+2015-06-21 17:43:54 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:43:57 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:43:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:43:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 17:43:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 17:44:00 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 17:44:00 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 17:44:01 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 17:44:01 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 17:44:02 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 17:44:02 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 17:44:03 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 17:44:04 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 17:44:04 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 17:44:05 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 17:44:05 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 17:44:08 DEBUG Grid:50 - Instance of the singleton taken
+2015-06-21 17:44:46 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 17:44:46 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 17:44:46 DEBUG Grid:50 - Instance of the singleton taken
+2015-06-21 17:44:46 DEBUG GridKnot:86 - Empty knot was created
+2015-06-21 17:44:46 DEBUG GridKnot:86 - Empty knot was created
+2015-06-21 17:44:46 DEBUG Grid:82 - Recalculating grid relations to processed image
+2015-06-21 17:44:46 INFO  Grid:111 - Recalculating of knots relations with rate: -Infinity
+2015-06-21 17:45:01 DEBUG Grid:37 - Singleton constructor used
+2015-06-21 17:48:32 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 17:48:37 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:48:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 17:48:40 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 17:48:40 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 17:48:40 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 17:48:40 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 17:48:40 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 17:48:41 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 17:48:41 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 17:48:41 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 17:48:41 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 17:48:42 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 17:48:42 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 17:48:43 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 17:48:43 DEBUG Grid:51 - Instance of the singleton taken
+2015-06-21 17:51:57 DEBUG Grid:36 - Singleton constructor used
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 17:51:57 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 17:51:57 DEBUG GridKnot:86 - Empty knot was created
+2015-06-21 17:51:57 DEBUG GridKnot:86 - Empty knot was created
+2015-06-21 17:51:57 DEBUG Grid:81 - Recalculating grid relations to processed image
+2015-06-21 17:51:57 INFO  Grid:110 - Recalculating of knots relations with rate: -Infinity
+2015-06-21 17:52:09 DEBUG Grid:36 - Singleton constructor used
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 17:52:15 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:12:56 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:12:56 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:12:56 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:12:56 INFO  Grid:114 - Recalculating of knots relations with rate: 1.4565217391304348
+2015-06-21 18:15:51 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:15:51 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:15:52 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:15:52 INFO  Grid:114 - Recalculating of knots relations with rate: 1.4565217391304348
+2015-06-21 18:16:09 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:16:09 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:16:09 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:16:09 INFO  Grid:114 - Recalculating of knots relations with rate: 1.4565217391304348
+2015-06-21 18:16:09 INFO  Grid:171 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 18:16:53 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:16:53 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:16:53 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:16:53 INFO  Grid:114 - Recalculating of knots relations with rate: 1.4565217391304348
+2015-06-21 18:16:53 INFO  Grid:171 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 18:17:59 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:17:59 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:17:59 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:17:59 INFO  Grid:171 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 18:25:29 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:25:29 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:25:29 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:25:29 INFO  Grid:171 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 18:26:58 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:26:58 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:26:58 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:26:58 INFO  Grid:171 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 18:27:49 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:27:49 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:27:49 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:27:49 INFO  Grid:171 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 18:28:39 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:28:39 DEBUG GridKnot:95 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:28:39 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:28:39 INFO  Grid:171 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 18:59:01 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 18:59:01 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 18:59:01 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 18:59:01 INFO  Grid:195 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 19:00:30 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 19:00:30 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 19:00:30 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 19:00:30 INFO  Grid:197 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 19:01:05 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 19:01:05 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 19:01:05 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 19:01:05 INFO  Grid:197 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 19:05:06 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 19:05:06 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 19:05:06 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 19:05:06 INFO  Grid:197 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 19:06:04 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 19:06:04 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 19:06:04 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 19:06:04 INFO  Grid:110 - Recalculating of knots relations with rate: 1.0307692307692307
+2015-06-21 19:06:04 INFO  Grid:193 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 19:06:25 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 19:06:25 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 19:06:25 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 19:06:25 INFO  Grid:110 - Recalculating of knots relations with rate: 1.0307692307692307
+2015-06-21 19:06:25 INFO  Grid:193 - Marked grid has been saved under the name: markedGrid.jpg
+2015-06-21 19:09:53 DEBUG Grid:38 - Singleton constructor used
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEyebrow
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEyebrow
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEyebrow
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEyebrow
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftOuterEye
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftInnerEye
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightInnerEye
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightOuterEye
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLeft
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthRight
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthUpper
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: MouthLower
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: LeftPupil
+2015-06-21 19:09:53 DEBUG GridKnot:86 - Knot was created with position (x,y): 0.0,0.0; type: RightPupil
+2015-06-21 19:09:53 DEBUG Grid:85 - Recalculating grid relations to processed image
+2015-06-21 19:09:53 INFO  Grid:110 - Recalculating of knots relations with rate: 0.8307692307692308
+2015-06-21 19:09:53 INFO  Grid:193 - Marked grid has been saved under the name: markedGrid.jpg
