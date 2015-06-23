@@ -56,6 +56,10 @@ public class GridTest {
 		assertNotNull(image);
 		grid.placeGrid(points4Faces[1][0],points4Faces[1][1]);
 		grid.markPatternGrid(image);
+		GridKnot knot=grid.getKnots().get(KnotType.LeftOuterEyebrow);
+		grid.markGrid(image);
+		grid.markPatternGrid(image);
+		knot.findBestPlace(image);
 		
 
 	}

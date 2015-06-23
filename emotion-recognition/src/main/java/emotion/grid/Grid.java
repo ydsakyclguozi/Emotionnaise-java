@@ -39,7 +39,7 @@ public class Grid {
 		}
 		knots = new EnumMap<KnotType, GridKnot>(KnotType.class);
 		for (KnotType type : KnotType.values()) {
-			knots.put(type, new GridKnot(this,type));
+			knots.put(type, new GridKnot(this, type));
 		}
 	}
 
@@ -75,7 +75,7 @@ public class Grid {
 
 		double patternDistanceX = leftPupilKnot.getX() - rightPupilKnot.getX();
 		double currentDistanceX = leftPupil.x - rightPupil.x;
-		if(patternDistanceX==0 || currentDistanceX==0){
+		if (patternDistanceX == 0 || currentDistanceX == 0) {
 			Log.error("Inappropriate distance between pupils");
 			return;
 		}
@@ -85,15 +85,37 @@ public class Grid {
 			Log.debug("Recalculating grid relations to processed image");
 		}
 		recalculateDistances(factor);
-		leftPupilKnot.setPatternX(leftPupil.x);
-		leftPupilKnot.setPatternY(leftPupil.y);
-		leftPupilKnot.setX(leftPupil.x);
-		leftPupilKnot.setY(leftPupil.y);
+		double xDistance = (leftPupil.x - leftPupilKnot.getPatternX());
+		double yDistance = (leftPupil.y - leftPupilKnot.getPatternY());
+		leftPupilKnot.setPatternX(leftPupilKnot.getPatternX() + xDistance);
+		leftPupilKnot.setPatternY(leftPupilKnot.getPatternY() + yDistance);
 
-		rightPupilKnot.setPatternX(rightPupil.x);
-		rightPupilKnot.setPatternY(rightPupil.y);
-		rightPupilKnot.setX(rightPupil.x);
-		rightPupilKnot.setY(rightPupil.y);
+		rightPupilKnot.setPatternX(rightPupilKnot.getPatternX() + xDistance);
+		rightPupilKnot.setPatternY(rightPupilKnot.getPatternY() + yDistance);
+
+		KnotType types[] = KnotType.values();
+		// Map has the same size as a number of entries in enum KnotType
+		for (int i = 0; i < types.length; i++) {
+			if (types[i] == KnotType.LeftPupil
+					|| types[i] == KnotType.RightPupil) {
+				continue;
+			}
+			GridKnot knot = this.knots.get(types[i]);
+			knot.setPatternX(knot.getPatternX() + xDistance);
+			knot.setPatternY(knot.getPatternY() + yDistance);
+
+			// First position of knots is the same as pattern one
+			knot.setX(knot.getPatternX());
+			knot.setY(knot.getPatternY());
+		}
+		// Set coordinates for LeftPupil and RightPupil that were skipped during
+		// iteration
+		GridKnot knot = this.knots.get(KnotType.LeftPupil);
+		knot.setX(knot.getPatternX());
+		knot.setY(knot.getPatternY());
+		knot = this.knots.get(KnotType.RightPupil);
+		knot.setX(knot.getPatternX());
+		knot.setY(knot.getPatternY());
 
 	}
 
@@ -109,29 +131,24 @@ public class Grid {
 		if (Log.isInfoEnabled()) {
 			Log.info("Recalculating of knots relations with rate: " + factor);
 		}
-		KnotType types[]=KnotType.values();
-		//Map has the same size as a number of entries in enum KnotType
-		for (int i = 0; i < types.length; i++) {
-			GridKnot knot1 = this.knots.get(types[i]);
-			for (int j = 0; j < knot1.getNeighbours().size(); j++) {
-				GridKnot knot2 = knots.get(knot1.getNeighbours().get(j));
-				// Recalculation of X
-				double distance = knot1.getX() - knot2.getX();
-				distance = ((distance * factor) - distance);
-				distance /= 2;
-				knot1.setX(knot1.getX() + distance);
-				knot2.setX(knot2.getX() - distance);
-				knot1.setPatternX(knot1.getPatternX()+distance);
-				knot2.setPatternX(knot2.getPatternX()-distance);
-				// Recalculation of Y
-				distance = knot1.getY() - knot2.getY();
-				distance = ((distance * factor) - distance);
-				distance /= 2;
-				knot1.setY(knot1.getY() + distance);
-				knot2.setY(knot2.getY() - distance);
-				knot1.setPatternY(knot1.getPatternY()+distance);
-				knot2.setPatternY(knot2.getPatternY()-distance);
+		KnotType types[] = KnotType.values();
+		// Map has the same size as a number of entries in enum KnotType
+		GridKnot knot1 = this.knots.get(KnotType.LeftOuterEyebrow);
+		for (int j = 0; j < types.length; j++) {
+			if (types[j] == KnotType.LeftOuterEyebrow) {
+				continue;
 			}
+			GridKnot knot2 = knots.get(types[j]);
+			// Recalculation of X
+			double distance = knot1.getX() - knot2.getX();
+			distance = ((distance * factor) - distance);
+			knot2.setX(knot2.getX() - distance);
+			knot2.setPatternX(knot2.getPatternX() - distance);
+			// Recalculation of Y
+			distance = knot1.getY() - knot2.getY();
+			distance = ((distance * factor) - distance);
+			knot2.setY(knot2.getY() - distance);
+			knot2.setPatternY(knot2.getPatternY() - distance);
 		}
 	}
 
@@ -157,10 +174,9 @@ public class Grid {
 			}
 			double x = knot.getX();
 			double y = knot.getY();
-			double halfSide=knot.getArea()/2;
-			Imgproc.rectangle(image, new Point(x-halfSide, y-halfSide),
-					new Point(x + halfSide, y + halfSide),
-					new Scalar(0, 0, 0));
+			double halfSide = knot.getArea() / 2;
+			Imgproc.rectangle(image, new Point(x - halfSide, y - halfSide),
+					new Point(x + halfSide, y + halfSide), new Scalar(0, 0, 0));
 		}
 		final String name = "markedGrid.jpg";
 		Imgcodecs.imwrite(name, image);
@@ -168,7 +184,7 @@ public class Grid {
 			Log.info("Marked grid has been saved under the name: " + name);
 		}
 	}
-	
+
 	/**
 	 * Method marks whole grid of pattern coordinates on the clone of the image
 	 */
@@ -182,12 +198,11 @@ public class Grid {
 			}
 			double x = knot.getPatternX();
 			double y = knot.getPatternY();
-			double halfSide=knot.getArea()/2;
-			Imgproc.rectangle(image, new Point(x-halfSide, y-halfSide),
-					new Point(x + halfSide, y + halfSide),
-					new Scalar(0, 0, 0));
+			double halfSide = knot.getArea() / 2;
+			Imgproc.rectangle(image, new Point(x - halfSide, y - halfSide),
+					new Point(x + halfSide, y + halfSide), new Scalar(0, 0, 0));
 		}
-		final String name = "markedGrid.jpg";
+		final String name = "markedPatternGrid.jpg";
 		Imgcodecs.imwrite(name, image);
 		if (Log.isInfoEnabled()) {
 			Log.info("Marked grid has been saved under the name: " + name);

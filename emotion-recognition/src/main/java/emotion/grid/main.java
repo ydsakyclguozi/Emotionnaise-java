@@ -16,6 +16,8 @@ public class main {
 		Imgcodecs.imwrite("testFace.jpg", image);
 		assertNotNull(image);
 		grid.placeGrid(new Point(69,125), new Point(136,126));
+		GridKnot knot=grid.getKnots().get(KnotType.LeftInnerEye);
+		knot.findBestPlace(image);
 	}
 
 }

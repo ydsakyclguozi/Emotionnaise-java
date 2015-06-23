@@ -1,7 +1,7 @@
 package emotion.grid;
 
 public enum DescriptiveTraits {
-	Pattern(0);
+	Pattern(0), GradientAngle(1);
 	
 	private final int id;
 
